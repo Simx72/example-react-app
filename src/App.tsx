@@ -1,4 +1,5 @@
 import { AppBody } from './App/body'
+import 'material-design-icons';
 
 function App() {
   return (
