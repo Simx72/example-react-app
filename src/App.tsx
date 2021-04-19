@@ -1,4 +1,4 @@
-import 'material-design-icons/iconfont/material-icons.css';
+import 'material-design-icons/iconfont/material-icons.min.css';
 import '@material/button/dist/mdc.button.min.css';
 
 import './App/styles.css';
