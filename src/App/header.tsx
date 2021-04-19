@@ -3,7 +3,7 @@ import "@material/list/dist/mdc.list.min.css";
 
 function AppHeader() {
   let drawer = (
-    <aside className="mdc-drawer" id="header">
+    <aside className="mdc-drawer">
       <div className="mdc-drawer__content">
         <nav className="mdc-list">
           <a className="mdc-list-item mdc-list-item--activated" href="/" aria-current="page">
