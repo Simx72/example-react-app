@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material/button": "^11.0.0",
     "@material/drawer": "^11.0.0",
     "@material/top-app-bar": "^11.0.0",
     "@testing-library/jest-dom": "^5.11.4",
