@@ -1,4 +1,4 @@
-import {AppBody} from './App/body'
+import { AppBody } from './App/body'
 
 function App() {
   return (
