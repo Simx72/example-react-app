@@ -1,8 +1,9 @@
+import {AppBody} from './App/body'
 
 function App() {
   return (
-    <div className="App">
-      
+    <div id="App">
+      <AppBody />
     </div>
   );
 }
