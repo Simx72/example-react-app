@@ -1,5 +1,5 @@
 
-function Body() {
+function AppBody() {
   return (
     <div id="App-body">
 
@@ -7,4 +7,4 @@ function Body() {
   )
 }
 
-export { Body }
+export { AppBody }
