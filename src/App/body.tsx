@@ -1,7 +1,7 @@
 
 function Body() {
   return (
-    <div>
+    <div id="App-body">
 
     </div>
   )
