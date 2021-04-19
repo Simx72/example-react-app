@@ -5,4 +5,4 @@ function AppHeader() {
   )
 }
 
-export {AppHeader}
+export { AppHeader }
