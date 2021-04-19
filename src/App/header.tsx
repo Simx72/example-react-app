@@ -19,7 +19,7 @@ function AppHeader() {
     </header>
   )
 
-  let drawer = (
+  /* let drawer = (
     <aside className="mdc-drawer">
       <div className="mdc-drawer__content">
         <nav className="mdc-list">
@@ -41,9 +41,9 @@ function AppHeader() {
         </nav>
       </div>
     </aside>
-  )
+  )*/
 
-  return drawer;
+  return topappbar;
 }
 
 export { AppHeader }
