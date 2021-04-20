@@ -37,7 +37,6 @@ class AppHeader extends Component {
   state = { selectedIndex: 0 };
 
   componentDidMount() {
-    alert(window.location.pathname)
     switch (window.location.pathname) {
       case '/':
         this.setState({
