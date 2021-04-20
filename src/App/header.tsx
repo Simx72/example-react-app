@@ -53,7 +53,7 @@ class AppHeader extends Component {
                 <ListItemText primaryText="Inicio" />
               </ListItem>
               <ListItem>
-                Item 2
+                Cualquier otra cosa
               </ListItem>
             </List>
           </DrawerContent>
