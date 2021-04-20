@@ -13,6 +13,4 @@ function App() {
   );
 }
 
-window.history.pushState({page: 'page'}, 'title', 'url');
-
 export default App;
