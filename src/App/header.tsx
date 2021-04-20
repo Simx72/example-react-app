@@ -4,9 +4,6 @@ import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerTitle } fr
 import MaterialIcon from '@material/react-material-icon';
 import List, { ListItem, ListItemGraphic, ListItemText } from '@material/react-list';
 
-// includes imports for drawer, list, material icon and top app bar styles
-import './App.scss';
-
 export class AppHeader extends Component {
   state = { selectedIndex: 0 };
 
