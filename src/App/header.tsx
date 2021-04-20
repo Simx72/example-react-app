@@ -4,6 +4,12 @@ import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerTitle } fr
 import MaterialIcon from '@material/react-material-icon';
 import List, { ListItem, ListItemGraphic, ListItemText } from '@material/react-list';
 
+import '@material/react-top-app-bar/index.scss';
+import '@material/react-material-icon/index.scss';
+import '@material/react-list/index.scss';
+import '@material/react-drawer/index.scss';
+import './styles.scss';
+
 export class AppHeader extends Component {
   state = { selectedIndex: 0 };
 
