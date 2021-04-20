@@ -1,16 +1,7 @@
 import TopAppBar, { TopAppBarIcon, TopAppBarRow, TopAppBarSection, TopAppBarTitle } from '@material/react-top-app-bar';
 import MaterialIcon from '@material/react-material-icon';
 
-import 'material-design-icons/iconfont/material-icons.css';
-import '@material/react-material-icon/dist/material-icon.css';
-import '@material/react-top-app-bar/index.scss';
-import '@material/react-list/index.scss';
-import '@material/react-drawer/index.scss';
-import './sass/material-icons.scss'
-import './sass/drawer.scss'
-
-
-const AppHeader = () => {
+const AppHeader = (a: any, b: any, c: any) => {
   return (
     <TopAppBar>
       <TopAppBarRow>
@@ -18,7 +9,7 @@ const AppHeader = () => {
           <TopAppBarIcon navIcon tabIndex={0}>
             <MaterialIcon hasRipple={true} icon='menu' />
           </TopAppBarIcon>
-          <TopAppBarTitle>Mi pagina</TopAppBarTitle>
+          <TopAppBarTitle>{a} {b} {c}</TopAppBarTitle>
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
           <TopAppBarIcon actionItem tabIndex={0}>
