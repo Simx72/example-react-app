@@ -69,7 +69,7 @@ class AppHeader extends Component {
         <Drawer>
           <DrawerHeader>
             <DrawerTitle tag='h2'>
-              jane.smith@gmail.com
+              cualquier.correo@gmail.com
             </DrawerTitle>
           </DrawerHeader>
 
