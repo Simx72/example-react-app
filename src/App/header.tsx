@@ -17,31 +17,26 @@ import './sass/drawer.scss'
 
 const Navbar = () => {
   return (
-    <div>
-      <TopAppBar>
-        <TopAppBarRow>
-          <TopAppBarSection align='start'>
-            <TopAppBarIcon navIcon tabIndex={0}>
-              <MaterialIcon hasRipple={true} icon='menu' />
-            </TopAppBarIcon>
-            <TopAppBarTitle>Mi pagina</TopAppBarTitle>
-          </TopAppBarSection>
-          <TopAppBarSection align='end' role='toolbar'>
-            <TopAppBarIcon actionItem tabIndex={0}>
-              <MaterialIcon hasRipple={true} icon='print' />
-            </TopAppBarIcon>
-          </TopAppBarSection>
-        </TopAppBarRow>
-      </TopAppBar>
-      <TopAppBarFixedAdjust>
-        My exciting content!
-      </TopAppBarFixedAdjust>
-    </div>
+    <TopAppBar>
+      <TopAppBarRow>
+        <TopAppBarSection align='start'>
+          <TopAppBarIcon navIcon tabIndex={0}>
+            <MaterialIcon hasRipple={true} icon='menu' />
+          </TopAppBarIcon>
+          <TopAppBarTitle>Mi pagina</TopAppBarTitle>
+        </TopAppBarSection>
+        <TopAppBarSection align='end' role='toolbar'>
+          <TopAppBarIcon actionItem tabIndex={0}>
+            <MaterialIcon hasRipple={true} icon='print' />
+          </TopAppBarIcon>
+        </TopAppBarSection>
+      </TopAppBarRow>
+    </TopAppBar>
   );
 }
 
 class AppHeader extends Component {
-  state = {selectedIndex: 0};
+  state = { selectedIndex: 0 };
 
   render() {
     return (
