@@ -49,7 +49,7 @@ class AppHeader extends Component {
           <DrawerContent>
             <List singleSelection selectedIndex={this.state.selectedIndex}>
               <ListItem>
-                <ListItemText primaryText="Inicio" />
+                <ListItemText primaryText="Inicio" secondaryText="Aqui puedes ver los datos generales" />
               </ListItem>
               <ListItem>
                 Item 2
