@@ -1,7 +1,7 @@
 import TopAppBar, { TopAppBarFixedAdjust, TopAppBarIcon, TopAppBarRow, TopAppBarSection, TopAppBarTitle } from '@material/react-top-app-bar';
 import MaterialIcon from '@material/react-material-icon';
 import { Component } from 'react';
-import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerTitle } from '@material/react-drawer';
+import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerTitle, DrawerSubtitle } from '@material/react-drawer';
 import List, { ListItem, ListItemText, ListItemGraphic } from '@material/react-list';
 
 import 'material-design-icons/iconfont/material-icons.css';
@@ -71,6 +71,9 @@ class AppHeader extends Component {
             <DrawerTitle tag='h2'>
               cualquier.correo@gmail.com
             </DrawerTitle>
+            <DrawerSubtitle tag='em'>
+              @nombre_de_usuario
+            </DrawerSubtitle>
           </DrawerHeader>
 
           <DrawerContent>
