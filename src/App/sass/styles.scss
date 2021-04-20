@@ -28,7 +28,7 @@
 
 html {
     @extend %no-padding;
-    @include mis-variables.default-font;
+    font-family: mis-variables.$default-font;
 }
 
 body {
