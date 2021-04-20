@@ -6,7 +6,7 @@ import List, { ListItem } from '@material/react-list';
 // import ListItemGraphic from '@material/react-list';
 // import ListItemText from '@material/react-list';
 
-import 'material-design-icons/iconfont/material-icons';
+import 'material-design-icons/iconfont/material-icons.css';
 import '@material/react-material-icon/dist/material-icon.css';
 import '@material/react-top-app-bar/index.scss';
 import '@material/react-list/index.scss';
