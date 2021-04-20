@@ -3,6 +3,8 @@ import List, { ListItem, ListItemGraphic, ListItemText } from "@material/react-l
 import MaterialIcon from "@material/react-material-icon";
 import { TopAppBarFixedAdjust } from "@material/react-top-app-bar";
 import { Component } from "react";
+import { AppBody } from "./body";
+import { AppHeader } from "./header";
 
 export class AppDrawer extends Component {
   state = { selectedIndex: 0 };
@@ -62,8 +64,9 @@ export class AppDrawer extends Component {
         </Drawer>
 
         <DrawerAppContent className='drawer-app-content'>
+          <AppHeader a="a" c="c" b="b" />
           <TopAppBarFixedAdjust>
-            Your inbox content
+            <AppBody />
           </TopAppBarFixedAdjust>
         </DrawerAppContent>
       </div>
