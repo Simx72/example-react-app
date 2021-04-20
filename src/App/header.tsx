@@ -1,7 +1,7 @@
 import TopAppBar, { TopAppBarIcon, TopAppBarRow, TopAppBarSection, TopAppBarTitle } from '@material/react-top-app-bar';
 import MaterialIcon from '@material/react-material-icon';
 
-const AppHeader = (props: { title: string }) => {
+const AppHeader = (props: { titulo: string }) => {
   return (
     <TopAppBar>
       <TopAppBarRow>
@@ -9,7 +9,7 @@ const AppHeader = (props: { title: string }) => {
           <TopAppBarIcon navIcon tabIndex={0}>
             <MaterialIcon hasRipple={true} icon='menu' />
           </TopAppBarIcon>
-          <TopAppBarTitle></TopAppBarTitle>
+          <TopAppBarTitle>{ props.titulo }</TopAppBarTitle>
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
           <TopAppBarIcon actionItem tabIndex={0}>
