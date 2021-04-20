@@ -1,3 +1,9 @@
+@use "@material/drawer";
+@use "@material/list";
+@include drawer.core-styles;
+@include drawer.dismissible-core-styles;
+@include drawer.modal-core-styles;
+@include list.core-styles;
 body,
 html {
     padding: 0;
