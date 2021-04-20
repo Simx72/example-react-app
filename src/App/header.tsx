@@ -54,8 +54,13 @@ class AppHeader extends Component {
     }
   }
 
-  listEltClick(elt: typeof ListItem) {
-    elt
+  listEltClick(elt?: HTMLElement) {
+    if (typeof elt != 'undefined') {
+      let href = elt.getAttribute('href')
+      if (href != null) {
+        window.location.assign(href)
+      }
+    }
   }
 
   render() {
