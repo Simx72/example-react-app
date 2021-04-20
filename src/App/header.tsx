@@ -6,8 +6,13 @@ import '@material/react-top-app-bar/index.scss';
 import '@material/react-list/index.scss';
 import '@material/react-drawer/index.scss';
 import './sass/material-icons.scss'
+import { Component } from 'react';
+import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerTitle } from '@material/react-drawer';
+import List, { ListItem } from '@material/react-list';
+import ListItemGraphic from '@material/react-list';
+import ListItemText from '@material/react-list';
 
-const AppHeader = () => {
+const Navbar = () => {
   return (
     <div>
       <TopAppBar>
@@ -30,6 +35,42 @@ const AppHeader = () => {
       </TopAppBarFixedAdjust>
     </div>
   );
+}
+
+class AppHeader extends Component {
+  state = {selectedIndex: 0};
+
+  render() {
+    return (
+      <div className='drawer-container'>
+        <Drawer>
+          <DrawerHeader>
+            <DrawerTitle tag='h2'>
+              jane.smith@gmail.com
+            </DrawerTitle>
+          </DrawerHeader>
+
+          <DrawerContent>
+            <List singleSelection selectedIndex={this.state.selectedIndex}>
+              <ListItem>
+                Item 1
+              </ListItem>
+              <ListItem>
+                Item 2
+              </ListItem>
+            </List>
+          </DrawerContent>
+        </Drawer>
+
+        <DrawerAppContent className='drawer-app-content'>
+          <Navbar />
+          <TopAppBarFixedAdjust>
+            Your inbox content
+          </TopAppBarFixedAdjust>
+        </DrawerAppContent>
+      </div>
+    );
+  }
 }
 
 export { AppHeader }
