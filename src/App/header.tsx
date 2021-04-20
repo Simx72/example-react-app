@@ -48,11 +48,11 @@ class AppHeader extends Component {
 
           <DrawerContent>
             <List singleSelection selectedIndex={this.state.selectedIndex}>
-              <ListItem>
+              <ListItem href="/">
                 <ListItemGraphic graphic={<MaterialIcon icon='home' />} />
                 <ListItemText primaryText="Inicio" />
               </ListItem>
-              <ListItem>
+              <ListItem href="/otro">
               <ListItemGraphic graphic={<MaterialIcon icon='favorite' />} />
                 Cualquier otra cosa
               </ListItem>
