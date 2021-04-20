@@ -54,6 +54,10 @@ class AppHeader extends Component {
     }
   }
 
+  listEltClick(elt: typeof ListItem) {
+    elt
+  }
+
   render() {
     return (
       <div className='drawer-container'>
