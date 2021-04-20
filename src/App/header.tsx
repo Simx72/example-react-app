@@ -13,7 +13,7 @@ const AppHeader = () => {
         <TopAppBarRow>
           <TopAppBarSection align='start'>
             <TopAppBarIcon navIcon tabIndex={0}>
-              <MaterialIcon hasRipple={true} icon='menu' onClick={() => console.log('click')}/>
+              <MaterialIcon hasRipple={true} icon='menu' />
             </TopAppBarIcon>
             <TopAppBarTitle>Mi pagina</TopAppBarTitle>
           </TopAppBarSection>
