@@ -2,9 +2,7 @@ import TopAppBar, { TopAppBarFixedAdjust, TopAppBarIcon, TopAppBarRow, TopAppBar
 import MaterialIcon from '@material/react-material-icon';
 import { Component } from 'react';
 import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerTitle } from '@material/react-drawer';
-import List, { ListItem } from '@material/react-list';
-// import ListItemGraphic from '@material/react-list';
-// import ListItemText from '@material/react-list';
+import List, { ListItem, ListItemText } from '@material/react-list';
 
 import 'material-design-icons/iconfont/material-icons.css';
 import '@material/react-material-icon/dist/material-icon.css';
@@ -51,7 +49,7 @@ class AppHeader extends Component {
           <DrawerContent>
             <List singleSelection selectedIndex={this.state.selectedIndex}>
               <ListItem>
-                Item 1
+                <ListItemText>Inicio</ListItemText>
               </ListItem>
               <ListItem>
                 Item 2
