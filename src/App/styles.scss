@@ -4,8 +4,15 @@
 @include drawer.dismissible-core-styles;
 @include drawer.modal-core-styles;
 @include list.core-styles;
-body,
-html {
+%no-padding {
     padding: 0;
     margin: 0;
+}
+
+html {
+    @extend %no-padding;
+}
+
+body {
+    @extend %no-padding;
 }
