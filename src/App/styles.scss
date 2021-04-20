@@ -1,7 +1,5 @@
-@use "@material/drawer";
-@use "@material/list";
-@use "@material/icon-button";
-@use "@material/top-app-bar/mdc-top-app-bar";
+@import '@material/react-top-app-bar';
+@import '@material/react-material-icon';
 %no-padding {
     padding: 0;
     margin: 0;
