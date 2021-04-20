@@ -23,7 +23,6 @@ const AppHeader = () => {
                 aria-label="print page" 
                 hasRipple={true} 
                 icon='print' 
-                onClick={() => console.log('print')}
               />
             </TopAppBarIcon>
           </TopAppBarSection>
