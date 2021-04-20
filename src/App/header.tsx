@@ -39,7 +39,7 @@ const Navbar = () => {
   );
 }
 
-export default class App extends Component {
+export class AppHeader extends Component {
   state = {selectedIndex: 0};
 
   render() {
