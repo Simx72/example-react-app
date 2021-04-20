@@ -17,12 +17,12 @@
 
 /* Variables */
 
-@use 'variables';
+@use 'mis-variables';
 
 /* SASS Code */
 
 * {
-    font-family: variables.$default-font;
+    font-family: mis-variables.$default-font;
 }
 
 %no-padding {
