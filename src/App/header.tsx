@@ -19,10 +19,7 @@ const AppHeader = () => {
           </TopAppBarSection>
           <TopAppBarSection align='end' role='toolbar'>
             <TopAppBarIcon actionItem tabIndex={0}>
-              <MaterialIcon 
-                hasRipple={true} 
-                icon='print' 
-              />
+              <MaterialIcon hasRipple={true} icon='print' />
             </TopAppBarIcon>
           </TopAppBarSection>
         </TopAppBarRow>
