@@ -36,6 +36,25 @@ const Navbar = () => {
 class AppHeader extends Component {
   state = { selectedIndex: 0 };
 
+  componentDidMount() {
+    alert(window.location.pathname)
+    switch (window.location.pathname) {
+      case '/':
+        this.setState({
+          selectedIndex: 0
+        })
+        break;
+      case '/otro':
+        this.setState({
+          selectedIndex: 1
+        })
+        break;
+    
+      default:
+        break;
+    }
+  }
+
   render() {
     return (
       <div className='drawer-container'>
