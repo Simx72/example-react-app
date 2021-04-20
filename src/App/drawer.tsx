@@ -4,7 +4,7 @@ import MaterialIcon from "@material/react-material-icon";
 import { TopAppBarFixedAdjust } from "@material/react-top-app-bar";
 import { Component } from "react";
 
-export class AppHeader extends Component {
+export class AppDrawer extends Component {
   state = { selectedIndex: 0 };
 
   componentDidMount() {
