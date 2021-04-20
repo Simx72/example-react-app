@@ -9,8 +9,10 @@ import './sass/material-icons.scss'
 import { Component } from 'react';
 import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerTitle } from '@material/react-drawer';
 import List, { ListItem } from '@material/react-list';
-import ListItemGraphic from '@material/react-list';
-import ListItemText from '@material/react-list';
+// import ListItemGraphic from '@material/react-list';
+// import ListItemText from '@material/react-list';
+
+import './sass/drawer.scss'
 
 const Navbar = () => {
   return (
