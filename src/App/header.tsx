@@ -5,6 +5,7 @@ import '@material/react-material-icon/dist/material-icon.css';
 import '@material/react-top-app-bar/index.scss';
 import '@material/react-list/index.scss';
 import '@material/react-drawer/index.scss';
+import './sass/material-icons.scss'
 
 const AppHeader = () => {
   return (
