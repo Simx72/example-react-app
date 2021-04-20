@@ -64,7 +64,7 @@ export class AppDrawer extends Component {
         </Drawer>
 
         <DrawerAppContent className='drawer-app-content'>
-          <AppHeader a="a" c="c" b="b" />
+          <AppHeader titulo='Inicio' />
           <TopAppBarFixedAdjust>
             <AppBody />
           </TopAppBarFixedAdjust>
