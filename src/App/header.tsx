@@ -75,11 +75,11 @@ class AppHeader extends Component {
 
           <DrawerContent>
             <List singleSelection selectedIndex={this.state.selectedIndex}>
-              <ListItem href="/">
+              <ListItem href="/" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
                 <ListItemGraphic graphic={<MaterialIcon icon='home' />} />
                 <ListItemText primaryText="Inicio" />
               </ListItem>
-              <ListItem href="/otro">
+              <ListItem href="/otro" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
               <ListItemGraphic graphic={<MaterialIcon icon='favorite' />} />
                 Cualquier otra cosa
               </ListItem>
