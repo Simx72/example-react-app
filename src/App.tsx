@@ -1,4 +1,3 @@
-
 import './App/styles.scss';
 
 import { AppBody } from './App/body'
