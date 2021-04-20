@@ -1,3 +1,4 @@
+import '@material/react-material-icon/index.scss';
 import './App/styles.scss';
 
 import { AppBody } from './App/body'
