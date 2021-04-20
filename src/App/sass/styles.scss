@@ -15,7 +15,15 @@
 @import './material-icons.scss';
 @import './drawer.scss';
 
+/* Variables */
+
+@use 'variables';
+
 /* SASS Code */
+
+* {
+    font-family: variables.$default-font;
+}
 
 %no-padding {
     padding: 0;
