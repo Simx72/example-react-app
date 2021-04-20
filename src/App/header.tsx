@@ -1,3 +1,5 @@
+import '@material/react-top-app-bar/index.scss';
+import '@material/react-material-icon/index.scss';
 import TopAppBar, {
   TopAppBarFixedAdjust,
   TopAppBarIcon,
@@ -5,7 +7,6 @@ import TopAppBar, {
   TopAppBarSection,
   TopAppBarTitle,
 } from '@material/react-top-app-bar';
-import '@material/react-top-app-bar/index.scss';
 import MaterialIcon from '@material/react-material-icon';
 
 function AppHeader() {
