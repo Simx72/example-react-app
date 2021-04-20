@@ -4,9 +4,9 @@ function AppHeader() {
 
   let topappbar = new MDCTopAppBarBaseFoundation()
 
-  topappbar = (<div></div>)
+  let div = (<div></div>)
 
-  return topappbar;
+  return div;
 }
 
 export { AppHeader }
