@@ -15,7 +15,7 @@ const AppHeader = () => {
             <TopAppBarIcon navIcon tabIndex={0}>
               <MaterialIcon hasRipple={true} icon='menu' onClick={() => console.log('click')}/>
             </TopAppBarIcon>
-            <TopAppBarTitle>Miami, FL</TopAppBarTitle>
+            <TopAppBarTitle>Mi pagina</TopAppBarTitle>
           </TopAppBarSection>
           <TopAppBarSection align='end' role='toolbar'>
             <TopAppBarIcon actionItem tabIndex={0}>
