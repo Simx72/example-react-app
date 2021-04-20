@@ -1,7 +1,7 @@
 import TopAppBar, { TopAppBarIcon, TopAppBarRow, TopAppBarSection, TopAppBarTitle } from '@material/react-top-app-bar';
 import MaterialIcon from '@material/react-material-icon';
 
-const AppHeader = (props: { titulo: string }) => {
+const AppHeader = (props: { titulo?: string }) => {
   return (
     <TopAppBar>
       <TopAppBarRow>
