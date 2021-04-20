@@ -53,6 +53,7 @@ class AppHeader extends Component {
                 <ListItemText primaryText="Inicio" />
               </ListItem>
               <ListItem>
+              <ListItemGraphic graphic={<MaterialIcon icon='more' />} />
                 Cualquier otra cosa
               </ListItem>
             </List>
