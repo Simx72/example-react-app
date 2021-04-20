@@ -4,7 +4,7 @@ import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerTitle } fr
 import MaterialIcon from '@material/react-material-icon';
 import List, { ListItem, ListItemGraphic, ListItemText } from '@material/react-list';
 
-import '@material/react-material-icon/dist/material-icon.min.css';
+import '@material/react-material-icon/dist/material-icon.css';
 import '@material/react-top-app-bar/index.scss';
 import '@material/react-list/index.scss';
 import '@material/react-drawer/index.scss';
