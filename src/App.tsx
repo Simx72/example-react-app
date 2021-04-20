@@ -1,4 +1,4 @@
-import '@material/react-material-icon/index.scss';
+import '@material/react-material-icon/dist/material-icon.min.css';
 import './App/styles.scss';
 
 import { AppBody } from './App/body'
