@@ -8,7 +8,6 @@ import '@material/react-material-icon/index.scss';
 import '@material/react-top-app-bar/index.scss';
 import '@material/react-list/index.scss';
 import '@material/react-drawer/index.scss';
-import './styles.scss';
 
 export class AppHeader extends Component {
   state = { selectedIndex: 0 };
