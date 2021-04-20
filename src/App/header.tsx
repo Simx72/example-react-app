@@ -1,6 +1,7 @@
 import TopAppBar, { TopAppBarFixedAdjust, TopAppBarIcon, TopAppBarRow, TopAppBarSection, TopAppBarTitle } from '@material/react-top-app-bar';
 import MaterialIcon from '@material/react-material-icon';
 
+import 'material-design-icons/iconfont/material-icons';
 import '@material/react-material-icon/dist/material-icon.css';
 import '@material/react-top-app-bar/index.scss';
 import '@material/react-list/index.scss';
