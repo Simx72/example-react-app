@@ -22,7 +22,7 @@
 /* SASS Code */
 
 * {
-    @include mis-variables
+    @include mis-variables.default-font;
 }
 
 %no-padding {
