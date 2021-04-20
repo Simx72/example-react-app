@@ -20,7 +20,6 @@ const AppHeader = () => {
           <TopAppBarSection align='end' role='toolbar'>
             <TopAppBarIcon actionItem tabIndex={0}>
               <MaterialIcon 
-                aria-label="print page" 
                 hasRipple={true} 
                 icon='print' 
               />
