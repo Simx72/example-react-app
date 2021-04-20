@@ -1,10 +1,22 @@
+/* External Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+/* Module Imports */
+
 @import 'material-design-icons/iconfont/material-icons.css';
 @import '@material/react-material-icon/dist/material-icon.css';
 @import '@material/react-top-app-bar/index.scss';
 @import '@material/react-list/index.scss';
 @import '@material/react-drawer/index.scss';
+
+/* Own Imports */
+
 @import './material-icons.scss';
 @import './drawer.scss';
+
+/* SASS Code */
+
 %no-padding {
     padding: 0;
     margin: 0;
