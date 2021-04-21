@@ -7,7 +7,7 @@ import { AppBody } from "./body";
 import { AppHeader } from "./header";
 
 export class AppDrawer extends Component {
-  state = { selectedIndex: 0 };
+  state = { selectedIndex: 0, drawerOpen: false };
 
   componentDidMount() {
     switch (window.location.pathname) {
@@ -39,7 +39,10 @@ export class AppDrawer extends Component {
   render() {
     return (
       <div className='drawer-container'>
-        <Drawer>
+        <Drawer
+          dismissible
+          open={this.state.drawerOpen}
+        >
           <DrawerHeader>
             <DrawerTitle tag='h2'>
               cualquier.correo@gmail.com
