@@ -33,5 +33,5 @@ html {
 
 body {
     @extend %no-padding;
-    @include drawer.core-styles;
+    @include core-styles;
 }
