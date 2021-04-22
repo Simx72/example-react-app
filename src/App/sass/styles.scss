@@ -25,11 +25,3 @@ html {
 body {
     @extend %no-padding;
 }
-
-.mdc-top-app-bar {
-    @include mdc-top-app-bar-fill-color-accessible($color-primary);
-}
-
-.mdc-top-app-bar__title {
-    color: white;
-}
