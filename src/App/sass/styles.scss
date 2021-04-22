@@ -36,7 +36,7 @@ body {
 }
 
 .mdc-top-app-bar {
-    @include mdc-top-app-bar-fill-color-accessible($color-primary-300);
+    @include mdc-top-app-bar-fill-color-accessible($color-primary);
 }
 
 .mdc-top-app-bar__title {
