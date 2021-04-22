@@ -36,5 +36,5 @@ body {
 }
 
 .mdc-top-app-bar {
-    @include fill-color-accessible($blue);
+    @include mdc-fill-color-accessible($blue);
 }
