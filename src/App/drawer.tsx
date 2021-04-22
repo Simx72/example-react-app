@@ -37,6 +37,7 @@ export class AppDrawer extends Component {
       if (href != null) {
         if (typeof window.history.pushState != 'undefined') {
           window.history.pushState({ href }, 'Inicio', href)
+          this.selectIndex()
         } else {
           window.location.assign(href)
         }
