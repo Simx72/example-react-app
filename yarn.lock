@@ -1495,7 +1495,7 @@
     "@material/theme" "^0.41.0"
     "@material/typography" "^0.41.0"
 
-"@material/list@^1.0.0":
+"@material/list@^1.0.0", "@material/list@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@material/list/-/list-1.1.1.tgz#296ed85ae3585af1749462e5bafd617d5675e85e"
   integrity sha512-YqX2A5qagoBolla6WHzP2BIUid/ufot5rVP2yrTz3DFvmswJMXU3HV2XU9NbiVOiefCjkra9ljtimiTlHUrAEg==
@@ -1523,6 +1523,33 @@
     "@material/shape" "^1.1.1"
     "@material/theme" "^1.1.0"
     "@material/typography" "^2.3.0"
+    tslib "^1.9.3"
+
+"@material/menu-surface@^1.0.1", "@material/menu-surface@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@material/menu-surface/-/menu-surface-1.1.1.tgz#d930f940e31a1bc32a2c9e3f15d5e60d43871cde"
+  integrity sha512-bOY3LsVamovl/yb4hMBDi3gh8UFEYyP3GHNpTt+X5KBPDehoFhXG9s21aNvGbHZbwURhhWiRzy/OUC3MLE/hKA==
+  dependencies:
+    "@material/animation" "^1.0.0"
+    "@material/base" "^1.0.0"
+    "@material/elevation" "^1.1.0"
+    "@material/feature-targeting" "^0.44.1"
+    "@material/rtl" "^0.42.0"
+    "@material/shape" "^1.1.1"
+    "@material/theme" "^1.1.0"
+    tslib "^1.9.3"
+
+"@material/menu@^1.1.0":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@material/menu/-/menu-1.1.1.tgz#1a9ca4d0e88e6a2ead9793c0377e0ceb73802241"
+  integrity sha512-bfsZ4Uexm02ey665SukjMK+3HtQVu7Bbc/q5chvPmLoMbSQ4PYE19C/p8cXKeNxkhd3S0h/gJDPw/cTbB9mrhg==
+  dependencies:
+    "@material/base" "^1.0.0"
+    "@material/feature-targeting" "^0.44.1"
+    "@material/list" "^1.1.1"
+    "@material/menu-surface" "^1.1.1"
+    "@material/ripple" "^1.1.0"
+    "@material/rtl" "^0.42.0"
     tslib "^1.9.3"
 
 "@material/radio@^1.1.0":
@@ -1575,6 +1602,24 @@
   integrity sha512-KDiMtMEtBZvqlma7wTS0ObY9BSFVtbCVkZiTnde/CxsYEQG9N6QwHClpbS4u/H8mWyXLdlSAQhK7rYSq1XGV0w==
   dependencies:
     "@material/react-ripple" "^0.15.0"
+    classnames "^2.2.6"
+
+"@material/react-menu-surface@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@material/react-menu-surface/-/react-menu-surface-0.15.0.tgz#d7e53ba6eaef82007a94472249b184a44b4ba978"
+  integrity sha512-5oRXOSycRRoIE+H9ZAFQKWhoffkMbnEiT9PscFsHLqCe2jWfsRTRxGfImrQIc/Of5jSU947djB2clBtpgNGRbQ==
+  dependencies:
+    "@material/menu-surface" "^1.0.1"
+    classnames "^2.2.6"
+
+"@material/react-menu@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@material/react-menu/-/react-menu-0.15.0.tgz#2807c4996d5fdfb888e58ed3afcbfa4bb5d3954c"
+  integrity sha512-618g0jxn0ZWvwhW5bGoDft8mQHPesYvgRZn5Jf6cuKaamEXlTsf+hKGzi+kcVwVgel7dXshFXxL8Es6Fcr/IgQ==
+  dependencies:
+    "@material/menu" "^1.1.0"
+    "@material/react-list" "^0.15.0"
+    "@material/react-menu-surface" "^0.15.0"
     classnames "^2.2.6"
 
 "@material/react-radio@^0.15.0":
