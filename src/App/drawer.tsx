@@ -88,7 +88,7 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
         </Drawer>
 
         <DrawerAppContent className='drawer-app-content'>
-          <AppHeader titulo='Inicio' />
+          <AppHeader titulo='Inicio' onMenuClick={() => this.toggleOpen()} />
           <TopAppBarFixedAdjust>
             <AppBody />
           </TopAppBarFixedAdjust>
