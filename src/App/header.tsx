@@ -13,7 +13,7 @@ const AppHeader = (props: { titulo?: string }) => {
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
           <TopAppBarIcon actionItem tabIndex={0}>
-            <MaterialIcon hasRipple={true} icon='print' />
+            <MaterialIcon hasRipple={true} icon='favorite' />
           </TopAppBarIcon>
         </TopAppBarSection>
       </TopAppBarRow>
