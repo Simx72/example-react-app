@@ -13,7 +13,7 @@ const AppHeader = (props: { titulo?: string, onMenuClick: () => void }) => {
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
           <TopAppBarIcon actionItem tabIndex={0}>
-            <MaterialIcon hasRipple={true} icon='more' />
+            <MaterialIcon hasRipple={true} icon='settings' />
           </TopAppBarIcon>
         </TopAppBarSection>
       </TopAppBarRow>
