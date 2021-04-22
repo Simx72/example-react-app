@@ -34,3 +34,7 @@ html {
 body {
     @extend %no-padding;
 }
+
+.mdc-top-app-bar {
+    fill-color-accessible($blue);
+}
