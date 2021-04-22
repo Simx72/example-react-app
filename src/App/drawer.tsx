@@ -6,7 +6,13 @@ import { Component } from "react";
 import { AppBody } from "./body";
 import { AppHeader } from "./header";
 
-export class AppDrawer extends Component {
+interface AppDrawerProps {}
+interface AppDrawerStates {
+  selectedIndex: number;
+  drawerOpen: boolean;
+}
+
+export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
   state = { selectedIndex: 0, drawerOpen: true };
 
   componentDidMount() {
