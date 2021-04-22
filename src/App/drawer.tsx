@@ -13,6 +13,12 @@ export class AppDrawer extends Component {
     this.selectIndex()
   }
 
+  toggleOpen() {
+    this.setState({
+      drawerOpen: !this.state.drawerOpen
+    })
+  }
+
   selectIndex() {
     switch (window.location.pathname) {
       case '/':
