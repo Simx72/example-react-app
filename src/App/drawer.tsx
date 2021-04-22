@@ -10,6 +10,10 @@ export class AppDrawer extends Component {
   state = { selectedIndex: 0, drawerOpen: false };
 
   componentDidMount() {
+    this.selectIndex()
+  }
+
+  selectIndex() {
     switch (window.location.pathname) {
       case '/':
         this.setState({
