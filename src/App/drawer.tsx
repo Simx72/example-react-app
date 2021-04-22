@@ -7,7 +7,7 @@ import { AppBody } from "./body";
 import { AppHeader } from "./header";
 
 export class AppDrawer extends Component {
-  state = { selectedIndex: 0, drawerOpen: false };
+  state = { selectedIndex: 0, drawerOpen: true };
 
   componentDidMount() {
     this.selectIndex()
