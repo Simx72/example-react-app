@@ -7,7 +7,6 @@
 @import 'material-design-icons/iconfont/material-icons.css';
 @import '@material/react-material-icon/dist/material-icon.css';
 @import '@material/react-top-app-bar/index.scss';
-@import '@material/top-app-bar/mixins';
 @import '@material/react-list/index.scss';
 @import '@material/react-drawer/index.scss';
 
@@ -37,5 +36,5 @@ body {
 }
 
 .mdc-top-app-bar {
-    @include fill-color-accessible($blue);
+    @include mdc-top-app-bar-fill-color-accessible($blue);
 }
