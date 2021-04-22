@@ -31,6 +31,7 @@ export class AppDrawer extends Component {
     if (typeof elt != 'undefined') {
       let href = elt.getAttribute('href')
       if (href != null) {
+        if (typeof window.history)
         window.location.assign(href)
       }
     }
@@ -45,10 +46,10 @@ export class AppDrawer extends Component {
         >
           <DrawerHeader>
             <DrawerTitle tag='h2'>
-              cualquier.correo@gmail.com
+              @nombre_de_usuario
             </DrawerTitle>
             <DrawerSubtitle tag='em'>
-              @nombre_de_usuario
+              cualquier.correo@gmail.com
             </DrawerSubtitle>
           </DrawerHeader>
 
