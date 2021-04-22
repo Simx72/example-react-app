@@ -21,7 +21,7 @@ export class AppDrawer extends Component {
           selectedIndex: 1
         })
         break;
-    
+
       default:
         break;
     }
@@ -31,8 +31,11 @@ export class AppDrawer extends Component {
     if (typeof elt != 'undefined') {
       let href = elt.getAttribute('href')
       if (href != null) {
-        if (typeof window.history)
-        window.location.assign(href)
+        if (typeof window.history.pushState != 'undefined') {
+          window.history.pushState({ href }, 'Inicio', href)
+        } else {
+          window.location.assign(href)
+        }
       }
     }
   }
@@ -60,7 +63,7 @@ export class AppDrawer extends Component {
                 <ListItemText primaryText="Inicio" />
               </ListItem>
               <ListItem href="/otro" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
-              <ListItemGraphic graphic={<MaterialIcon icon='favorite' />} />
+                <ListItemGraphic graphic={<MaterialIcon icon='favorite' />} />
                 Cualquier otra cosa
               </ListItem>
             </List>
