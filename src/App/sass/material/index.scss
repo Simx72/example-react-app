@@ -5,3 +5,10 @@
 @import '@material/react-menu-surface/index.scss';
 @import '@material/react-menu/index.scss';
 @import './material-icons.scss';
+.mdc-top-app-bar {
+    @include mdc-top-app-bar-fill-color-accessible($color-primary);
+}
+
+.mdc-top-app-bar__title {
+    color: white;
+}
