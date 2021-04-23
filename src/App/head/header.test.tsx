@@ -1,12 +1,10 @@
-import { getByTestId } from "@testing-library/react";
+import { render } from "@testing-library/react";
+import { AppHeader } from "./header";
 
 test('mdc-top-app-bar renders fine!', () => {
-  expect(
-    getByTestId(
-      document.body,
-      'top-app-bar'
-    )
-  ).toBeInTheDocument()
+  const res = render(<AppHeader onMenuClick={()=>{}} titulo="Hola" />)
+  expect(res.getByText('Titulo de prueba')).toBeInTheDocument()
+  expect(res.getByTestId('top-app-bar')).toHaveDisplayValue('render')
 })
 
 export { };
