@@ -5,6 +5,7 @@ import { TopAppBarFixedAdjust } from "@material/react-top-app-bar";
 import { Component } from "react";
 import { AppBody } from "./body/body";
 import { AppHeader } from "./head/header";
+import appInfo from '../app-info.json';
 
 interface AppDrawerProps {}
 interface AppDrawerStates {
@@ -88,7 +89,7 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
         </Drawer>
 
         <DrawerAppContent className='drawer-app-content'>
-          <AppHeader titulo='Mi Aplicación' onMenuClick={() => this.toggleOpen()} />
+          <AppHeader titulo={appInfo.name} onMenuClick={() => this.toggleOpen()} />
           <TopAppBarFixedAdjust>
             <AppBody />
           </TopAppBarFixedAdjust>
