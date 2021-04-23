@@ -57,10 +57,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
           <TopAppBarIcon actionItem tabIndex={0} onClick={this.onMenuClick}>
             <MaterialIcon hasRipple={true} icon='settings' />
           </TopAppBarIcon>
-          <NavBarMenu
-            coordinates={this.state.navBarMenuStates.coordinates}
-            open={this.state.navBarMenuStates.open}
-          />
+          <NavBarMenu coordinates={this.state.navBarMenuStates.coordinates} open={this.state.navBarMenuStates.open} />
         </TopAppBarSection>
       </TopAppBarRow>
     </TopAppBar>
