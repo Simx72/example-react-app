@@ -20,13 +20,12 @@ interface AppHeaderStates {
 
 class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
   state = {
-      navBarMenuStates: {
-        coordinates: {
-          x: 0,
-          y: 0
-        },
-        open: false
-      }
+    navBarMenuStates: {
+      coordinates: {
+        x: 0,
+        y: 0
+      },
+      open: false
     }
   }
 
