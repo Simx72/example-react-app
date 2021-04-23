@@ -30,6 +30,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
   }
 
   onMenuClick(ev: ReactMouseEvent<HTMLElement, MouseEvent>) {
+    console.log(this)
     this.setState({
       navBarMenuStates: {
         coordinates: {
