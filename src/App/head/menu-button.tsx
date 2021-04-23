@@ -48,7 +48,8 @@ export class NavBarMenu extends Component<NavBarMenuProps, NavBarMenuStates> {
   }
 
   render() {
-    const menuOptions = [
+    let menuOptions: { text: string; icon: string}[] ;
+    menuOptions = [
       'Save',
       'Edit',
       'Cut',
