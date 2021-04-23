@@ -45,7 +45,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
   render = () => (
     <TopAppBar>
       <TopAppBarRow>
-        <TopAppBarSection align='start'>
+        <TopAppBarSection align='start' id="top-app-bar-start-section">
           <TopAppBarIcon navIcon tabIndex={0} onClick={() => this.props.onMenuClick()}>
             <MaterialIcon hasRipple={true} icon='menu' />
           </TopAppBarIcon>
