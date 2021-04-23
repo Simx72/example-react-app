@@ -1,9 +1,9 @@
-import { queryByTestId } from "@testing-library/react";
+import { getByTestId } from "@testing-library/react";
 
 test('mdc-top-app-bar renders fine!', () => {
   expect(
-    queryByTestId(
-      document.body,
+    getByTestId(
+      document.getElementById('top-app-bar-section-start'),
       'top-app-bar'
     )
   ).toBeInTheDocument()
