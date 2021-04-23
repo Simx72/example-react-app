@@ -19,8 +19,7 @@ interface AppHeaderStates {
 
 
 class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
-  componentDidMount() {
-    this.setState({
+  state = {
       navBarMenuStates: {
         coordinates: {
           x: 0,
@@ -28,7 +27,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
         },
         open: false
       }
-    })
+    }
   }
 
   onMenuClick(ev: ReactMouseEvent<HTMLElement, MouseEvent>) {
