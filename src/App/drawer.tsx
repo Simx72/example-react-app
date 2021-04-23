@@ -77,7 +77,7 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
             <List singleSelection selectedIndex={this.state.selectedIndex}>
               <ListItem href="/" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
                 <ListItemGraphic graphic={<MaterialIcon icon='home' />} />
-                <ListItemText primaryText="Inicio" />
+                <ListItemText primaryText="Mi Aplicación" />
               </ListItem>
               <ListItem href="/otro" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
                 <ListItemGraphic graphic={<MaterialIcon icon='favorite' />} />
