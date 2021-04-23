@@ -6,6 +6,7 @@ import { AppDrawer } from './App/drawer';
 function App() {
   return (
     <div id="App">
+      <input type="hidden" value="Renders Good!" data-testid="app"/>
       <AppDrawer />
     </div>
   );
