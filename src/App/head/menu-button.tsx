@@ -1,4 +1,5 @@
-import Menu, { MenuList, MenuListItem, MenuListItemText } from "@material/react-menu";
+import MaterialIcon from "@material/react-material-icon";
+import Menu, { MenuList, MenuListItem, MenuListItemGraphic, MenuListItemText } from "@material/react-menu";
 import { Component } from "react";
 
 interface NavBarMenuProps {
@@ -67,8 +68,8 @@ export class NavBarMenu extends Component<NavBarMenuProps, NavBarMenuStates> {
         <MenuList>
           {menuOptions.map((option, index) => (
             <MenuListItem key={index}>
-              <MenuListItemText primaryText={option} />
-              {/* You can also use other components from list, which are documented below */}
+              <MenuListItemText primaryText={option.text} />
+              <MenuListItemGraphic graphic={<MaterialIcon icon={option.icon} />} />
             </MenuListItem>
           ))}
         </MenuList>
