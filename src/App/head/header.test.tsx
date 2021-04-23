@@ -1,4 +1,4 @@
-import { queryByTestId } from "@testing-library/dom";
+import { queryByTestId } from "@testing-library/react";
 
 test('mdc-top-app-bar renders fine!', () => {
   expect(
