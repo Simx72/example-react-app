@@ -50,6 +50,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
             <MaterialIcon hasRipple={true} icon='menu' />
           </TopAppBarIcon>
           <TopAppBarTitle>{this.props.titulo}</TopAppBarTitle>
+          <input type="hidden" value="render" data-testid="top-app-bar" />
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
           <TopAppBarIcon actionItem tabIndex={0} onClick={this.onMenuClick}>
