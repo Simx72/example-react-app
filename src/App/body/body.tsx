@@ -4,7 +4,7 @@ function AppBody() {
   return (
     <div id="App-body">
       <Chart.Bar
-        type
+        type="bar"
         data={{
           labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
           datasets: [
