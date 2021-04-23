@@ -3,7 +3,7 @@ import List, { ListItem, ListItemGraphic, ListItemText } from "@material/react-l
 import MaterialIcon from "@material/react-material-icon";
 import { TopAppBarFixedAdjust } from "@material/react-top-app-bar";
 import { Component } from "react";
-import { AppBody } from "./body";
+import { AppBody } from "./body/body";
 import { AppHeader } from "./head/header";
 
 interface AppDrawerProps {}
