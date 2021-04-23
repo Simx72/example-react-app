@@ -3,7 +3,7 @@ import { getByTestId } from "@testing-library/react";
 test('mdc-top-app-bar renders fine!', () => {
   expect(
     getByTestId(
-      document.getElementById('top-app-bar-section-start'),
+      document.body,
       'top-app-bar'
     )
   ).toBeInTheDocument()
