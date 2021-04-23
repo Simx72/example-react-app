@@ -1,6 +1,11 @@
+import { queryByTestId } from "@testing-library/dom";
+
 test('mdc-top-app-bar renders fine!', () => {
   expect(
-    document.querySelector('[data-testid="top-app-bar"]')
+    queryByTestId(
+      document.body,
+      'top-app-bar'
+    )
   ).toBeInTheDocument()
 })
 
