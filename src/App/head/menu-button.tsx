@@ -16,7 +16,7 @@ interface NavBarMenuStates {
 
 export class NavBarMenu extends Component<NavBarMenuProps, NavBarMenuStates> {
   state = {
-    open: true,
+    open: false,
     coordinates: { x: this.props.x, y: this.props.y },
   };
 
