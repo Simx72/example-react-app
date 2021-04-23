@@ -50,11 +50,11 @@ export class NavBarMenu extends Component<NavBarMenuProps, NavBarMenuStates> {
   render() {
     let menuOptions: { text: string; icon: string}[] ;
     menuOptions = [
-      'Save',
-      'Edit',
-      'Cut',
-      'Copy',
-      'Paste',
+      {text: 'Save', icon: 'favorite'},
+      {text: 'Edit', icon: 'favorite'},
+      {text: 'Cut', icon: 'favorite'},
+      {text: 'Copy', icon: 'favorite'},
+      {text: 'Paste', icon: 'favorite'},
     ];
 
     return (
