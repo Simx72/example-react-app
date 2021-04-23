@@ -13,6 +13,9 @@ const AppHeader = (props: { titulo?: string, onMenuClick: () => void }) => {
           <TopAppBarTitle>{ props.titulo }</TopAppBarTitle>
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
+          <TopAppBarIcon actionItem tabIndex={0}>
+            <MaterialIcon hasRipple={true} icon='settings' />
+          </TopAppBarIcon>
           <NavBarMenu x={0} y={0} />
         </TopAppBarSection>
       </TopAppBarRow>
