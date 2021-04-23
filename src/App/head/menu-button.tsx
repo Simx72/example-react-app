@@ -1,10 +1,23 @@
 import Menu, { MenuList, MenuListItem, MenuListItemText } from "@material/react-menu";
 import { Component } from "react";
 
-export class NavBarMenuButton extends Component {
+interface NavBarMenuProps {
+  x: number;
+  y: number;
+}
+
+interface NavBarMenuStates {
+  open: boolean;
+  coordinates: {
+    x: number;
+    y: number
+  }
+}
+
+export class NavBarMenu extends Component<NavBarMenuProps, NavBarMenuStates> {
   state = {
     open: true,
-    coordinates: undefined,
+    coordinates: { x: this.props.x, y: this.props.y },
   };
 
   componentDidMount() {
