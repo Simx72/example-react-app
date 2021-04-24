@@ -3,7 +3,7 @@ Arial,
 Helvetica,
 sans-serif !important;
 @function my-color($n: 'primary', $d: 'default') {
-    @if $n=='primary'OR $n=='complementary' {
+    @debug #{$n}#{$d} @if $n=='primary'OR $n=='complementary' {
         @if $n='primary' {
             @if $d=='50' {
                 @return #e2f2fb;
