@@ -1,0 +1,42 @@
+import Card, { CardPrimaryContent, CardActions, CardActionIcons } from '@material/react-card';
+import * as Chart from 'react-chartjs-2';
+import MaterialIcon from '@material/react-material-icon';
+
+const Card1 = () => (
+  <div id="App-body">
+    <Card>
+      <CardPrimaryContent style={{ padding: '1rem' }} >
+        <Chart.Bar
+          type="bar"
+          data={{
+            labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+            datasets: [
+              {
+                label: "Population (millions)",
+                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                data: [2478, 5267, 734, 784, 433]
+              }
+            ]
+          }}
+          options={{
+            legend: { display: false },
+            title: {
+              display: true,
+              text: 'Predicted world population (millions) in 2050'
+            }
+          }}
+        />
+      </CardPrimaryContent>
+      <CardActions>
+        <CardActionIcons>
+          <MaterialIcon icon='more_vert' />
+          <MaterialIcon icon='more' />
+          <MaterialIcon icon='favorite' />
+        </CardActionIcons>
+      </CardActions>
+    </Card>
+  </div>
+)
+
+
+export { Card1 }
