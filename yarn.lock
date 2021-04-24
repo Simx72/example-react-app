@@ -1432,6 +1432,19 @@
   dependencies:
     tslib "^1.9.3"
 
+"@material/button@^1.1.0":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@material/button/-/button-1.1.1.tgz#35af0d295f6ce6e3df9d4978485b5294d794f682"
+  integrity sha512-03aEyzZBIeqpgZkqLjro/enz8ORUnfQslBUdAgkPqdjh1X0oIEugr3UaFyC5QlSBTU3j3GIsnKIxWaggkRenpQ==
+  dependencies:
+    "@material/elevation" "^1.1.0"
+    "@material/feature-targeting" "^0.44.1"
+    "@material/ripple" "^1.1.0"
+    "@material/rtl" "^0.42.0"
+    "@material/shape" "^1.1.1"
+    "@material/theme" "^1.1.0"
+    "@material/typography" "^1.0.0"
+
 "@material/card@^2.1.1":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@material/card/-/card-2.3.0.tgz#f59ac3b16d21d21af5747a530624f14622286c29"
@@ -1456,6 +1469,24 @@
     "@material/ripple" "^2.3.0"
     "@material/rtl" "^0.42.0"
     "@material/theme" "^1.1.0"
+    tslib "^1.9.3"
+
+"@material/dialog@^2.2.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@material/dialog/-/dialog-2.3.0.tgz#4525daf31e1d65e50c67f1cc944e69184134734a"
+  integrity sha512-T0xEKUW4uY5ZK7S92bdCVjFo9naasTRFNTXccIk+lBkbUlTsCOJMtix+dSJcj8ba8NOZjjq7phfAQqnNKUOhvg==
+  dependencies:
+    "@material/animation" "^1.0.0"
+    "@material/base" "^1.0.0"
+    "@material/dom" "^1.1.0"
+    "@material/elevation" "^1.1.0"
+    "@material/feature-targeting" "^0.44.1"
+    "@material/ripple" "^2.3.0"
+    "@material/rtl" "^0.42.0"
+    "@material/shape" "^1.1.1"
+    "@material/theme" "^1.1.0"
+    "@material/typography" "^2.3.0"
+    focus-trap "^5.0.0"
     tslib "^1.9.3"
 
 "@material/dom@^1.0.0", "@material/dom@^1.1.0":
@@ -1506,6 +1537,11 @@
     "@material/selection-control" "^0.41.0"
     "@material/theme" "^0.41.0"
     "@material/typography" "^0.41.0"
+
+"@material/layout-grid@^0.41.0":
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/@material/layout-grid/-/layout-grid-0.41.0.tgz#2e7d3be76313e0684d573b10c2c6a88b3230d251"
+  integrity sha512-Sa5RNoTGgfIojqJ9E94p7/k11V6q/tGk7HwKi4AQNAPjxield0zcl3G/SbsSb8YSHoK+D+7OXDN+n11x6EqF7g==
 
 "@material/list@^1.0.0", "@material/list@^1.1.1":
   version "1.1.1"
@@ -1576,6 +1612,15 @@
     "@material/theme" "^1.1.0"
     tslib "^1.9.3"
 
+"@material/react-button@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@material/react-button/-/react-button-0.15.0.tgz#1585c86547cd83ebe0642fa8f45b83da3075d259"
+  integrity sha512-OnnQx1XEomYlmp9TQIRYy+UAzJG1NPlmBfX/oP6hkxB4bWcrR2MLbqR4J1RMLDjl7a6qfdU2HskWPYp0wS+4Pw==
+  dependencies:
+    "@material/button" "^1.1.0"
+    "@material/react-ripple" "^0.15.0"
+    classnames "^2.2.6"
+
 "@material/react-card@^0.15.0":
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/@material/react-card/-/react-card-0.15.0.tgz#e76a4f3c21b82802bb52b600c62535165c143b71"
@@ -1594,6 +1639,17 @@
     "@material/react-ripple" "^0.15.0"
     classnames "^2.2.6"
 
+"@material/react-dialog@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@material/react-dialog/-/react-dialog-0.15.0.tgz#18b51933ea64f960db5283ca3a551070f686bbb0"
+  integrity sha512-E65/qxAb+BHy0RbPcyOpp4x3qrdgQeCTzPbCtz6r4+XcwPI4/7NVGaZQeFJKnlHsFe5nULZQznvCgn09p/1uVg==
+  dependencies:
+    "@material/dialog" "^2.2.0"
+    "@material/dom" "^1.0.0"
+    "@material/react-button" "^0.15.0"
+    classnames "^2.2.6"
+    focus-trap "^5.0.0"
+
 "@material/react-drawer@^0.15.0":
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/@material/react-drawer/-/react-drawer-0.15.0.tgz#8714c42b73d5fbd3f9aec86c1f0d8c1d1c7a6528"
@@ -1603,6 +1659,14 @@
     "@material/list" "^2.3.0"
     classnames "^2.2.6"
     focus-trap "^5.0.0"
+
+"@material/react-layout-grid@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@material/react-layout-grid/-/react-layout-grid-0.15.0.tgz#598cdebc4c8b311a7132529327b70bc347c41a5f"
+  integrity sha512-vxQSwLddotxhzoq1gFmlvqvfsc1323dcweCAKOEurNKV1cXpgR87D3BZrugROG5a0n0tTexejmI63RpHX2CzJw==
+  dependencies:
+    "@material/layout-grid" "^0.41.0"
+    classnames "^2.2.6"
 
 "@material/react-list@^0.15.0":
   version "0.15.0"
