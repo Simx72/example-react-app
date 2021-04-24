@@ -25,7 +25,14 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
           <input type="hidden" value="render" data-testid="top-app-bar" />
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
-          <ButtonWithMenu ButtonClass={TopAppBarIcon} options={[]} />
+          <ButtonWithMenu 
+            ButtonClass={TopAppBarIcon}
+            options={[
+              {
+                text: 'Opción 1',
+                icon: 'face'
+              }
+            ]} />
         </TopAppBarSection>
       </TopAppBarRow>
     </TopAppBar>
