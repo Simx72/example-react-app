@@ -3,46 +3,16 @@ import Menu, { MenuList, MenuListItem, MenuListItemGraphic, MenuListItemText } f
 import { TopAppBarIcon } from "@material/react-top-app-bar";
 import { Component, MouseEvent as ReactMouseEvent } from 'react';
 
-interface MenuOption {
-  text: string
-  icon: string
-}
-
-let menuOptions: MenuOption[]
-menuOptions = [
-  { text: 'Un texto bien largoooo', icon: 'favorite' },
-  { text: 'Edit', icon: 'favorite' },
-  { text: 'Cut', icon: 'favorite' },
-  { text: 'Copy', icon: 'favorite' },
-  { text: 'Paste', icon: 'favorite' },
-]
-
-const NavBarMenu = (props: { open: boolean, coordinates: { x: number, y: number }, onClose?: () => void, onSelect?: (index: number, item: Element) => void }) => (
-  <Menu
-    open={props.open}
-    coordinates={props.coordinates}
-    onSelected={props.onSelect}
-    onClose={props.onClose}
-  >
-    <MenuList style={{ overflow: 'hidden' }}>
-      {menuOptions.map((option, index) => (
-        <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
-          <MenuListItemText primaryText={option.text} />
-          <MenuListItemGraphic graphic={<MaterialIcon icon={option.icon} />} />
-        </MenuListItem>
-      ))}
-    </MenuList>
-  </Menu>
+let MenuOption = (props: { text: string, icon: string, key: string | number }) => (
+  <MenuListItem key={props.key} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
+    <MenuListItemText primaryText={props.text} />
+    <MenuListItemGraphic graphic={<MaterialIcon icon={props.icon} />} />
+  </MenuListItem>
 )
-
-
-export function MenuItem(props: any) {
-
-}
 
 interface ButtonWithMenuProps {
   ButtonClass: (typeof TopAppBarIcon)
-  children: MenuOption[]
+  children: typeof MenuOption[]
   onSelect?: (index: number, item: Element) => void
 }
 interface ButtonWithMenuStates {
@@ -53,7 +23,7 @@ interface ButtonWithMenuStates {
   open: boolean
 }
 
-export class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates> {
+class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates> {
   state = {
     coordinates: {
       x: 0,
@@ -90,18 +60,11 @@ export class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMen
           onSelected={this.onSelected}
           onClose={this.onClose}
         >
-          <MenuList style={{ overflow: 'hidden' }}>
-            {this.props.children?.map((option, index) => (
-              <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
-                <MenuListItemText primaryText={option.text} />
-                <MenuListItemGraphic graphic={<MaterialIcon icon={option.icon} />} />
-              </MenuListItem>
-            ))}
-          </MenuList>
+          <MenuList style={{ overflow: 'hidden' }} children={this.props.children} />
         </Menu>
       </>
     )
   }
 }
 
-export { NavBarMenu }
+export {MenuOption, ButtonWithMenu}
