@@ -75,6 +75,7 @@ sans-serif !important;
             }
         }
         @else {
+            @return #000000;
             @error "The first param of the function 'my-color' must either 'primary' or 'complementary'"
         }
     }
