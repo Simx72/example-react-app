@@ -1,40 +1,12 @@
-@use "sass:map";
 $default-font: 'Dosis',
 Arial,
 Helvetica,
 sans-serif !important;
-$color-primary-map: ( "d50": #e2f2fb, "d100": #b8ddf7, "d200": #8bc9f3, "d300": #5bb3ee, "d400": #30a3ec, "d500": #0094ea, "d600": #0087dd, "d700": #0075cb, "d800": #0064b9, "d900": #00479c);
-@debug map.get($color-primary-map, 'd50');
 @mixin my-color($n: 'primary', $d) {
     @if $n=='primary'OR $n=='complementary' {}
     @else {
         @error "The first param of the function 'my-color' must either 'primary' or 'complementary'"
     }
-}
-
-:root {
-    --color-primary-50: #e2f2fb;
-    --color-primary-100: #b8ddf7;
-    --color-primary-200: #8bc9f3;
-    --color-primary-300: #5bb3ee;
-    --color-primary-400: #30a3ec;
-    --color-primary-500: #0094ea;
-    --color-primary-600: #0087dd;
-    --color-primary-700: #0075cb;
-    --color-primary-800: #0064b9;
-    --color-primary-900: #00479c;
-    --color-primary: #5bb3ee;
-    --color-complementary-50: #fffeed;
-    --color-complementary-100: #fffad0;
-    --color-complementary-200: #fff5b2;
-    --color-complementary-300: #fff096;
-    --color-complementary-400: #ffeb81;
-    --color-complementary-500: #fde670;
-    --color-complementary-600: #ffdd72;
-    --color-complementary-700: #ffce70;
-    --color-complementary-800: #fbb868;
-    --color-complementary-900: #ee965b;
-    --color-complementary: #ee965b;
 }
 
 $color-primary-50: #e2f2fb;
