@@ -1685,6 +1685,14 @@
     "@material/top-app-bar" "^1.1.0"
     classnames "^2.2.6"
 
+"@material/react-typography@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@material/react-typography/-/react-typography-0.15.0.tgz#7e6f36058a1b88a1d0995b600b64803b4dca4fbb"
+  integrity sha512-W7junmTxVxxQ5sMSW6YMhF4ZgLmHOAqEa88PCmmioMD8lOX0Bt5a0DY1DiBwbxUqZps/vwqfrIZxuz99SzHpmw==
+  dependencies:
+    "@material/typography" "^1.0.0"
+    classnames "^2.2.6"
+
 "@material/ripple@^0.41.0":
   version "0.41.0"
   resolved "https://registry.yarnpkg.com/@material/ripple/-/ripple-0.41.0.tgz#73dbb9bf0e1d72382926b39f2527c011e689dde2"
@@ -1769,13 +1777,6 @@
     "@material/typography" "^1.0.0"
     tslib "^1.9.3"
 
-"@material/typography@2.3.0", "@material/typography@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@material/typography/-/typography-2.3.0.tgz#fe2180c697172227f0745cda684ecafdaba3f8dd"
-  integrity sha512-NtWVVvwG9Te6/kuIl4fEwDcXGCS7mfPgo5CKPyxcK6y0hJHv6yRHpipJT9D4ZlXw0sQx9B33doOK7iYJtwBBZw==
-  dependencies:
-    "@material/feature-targeting" "^0.44.1"
-
 "@material/typography@^0.41.0":
   version "0.41.0"
   resolved "https://registry.yarnpkg.com/@material/typography/-/typography-0.41.0.tgz#645e0199bdba6b09d935352ab2095d07c33ec395"
@@ -1785,6 +1786,13 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@material/typography/-/typography-1.0.0.tgz#327ecfcac5ee3af8a3a102f3f125a761202f4189"
   integrity sha512-Oeqbjci1cC7jTE8/n3dwnkqKe9ZeWiaE+rgMtRYtRFw1HvAw14SpGA5EEAS/Li2Hu2KZ50FYCe3HYqShfxtChA==
+  dependencies:
+    "@material/feature-targeting" "^0.44.1"
+
+"@material/typography@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@material/typography/-/typography-2.3.0.tgz#fe2180c697172227f0745cda684ecafdaba3f8dd"
+  integrity sha512-NtWVVvwG9Te6/kuIl4fEwDcXGCS7mfPgo5CKPyxcK6y0hJHv6yRHpipJT9D4ZlXw0sQx9B33doOK7iYJtwBBZw==
   dependencies:
     "@material/feature-targeting" "^0.44.1"
 
