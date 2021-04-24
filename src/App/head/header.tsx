@@ -42,7 +42,15 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
   }
 
   onMenuClose = () => {
-
+    this.setState({
+      navBarMenuStates: {
+        coordinates: {
+          x: this.state.navBarMenuStates.coordinates.x,
+          y: this.state.navBarMenuStates.coordinates.y
+        },
+        open: false
+      }
+    })
   }
 
   render = () => (
