@@ -4,7 +4,8 @@ Arial,
 Helvetica,
 sans-serif !important;
 $color-primary-map: ("d50": #e2f2fb, "d100": #b8ddf7, "d200": #8bc9f3, "d300": #5bb3ee, "d400": #30a3ec, "d500": #0094ea, "d600": #0087dd, "d700": #0075cb, "d800": #0064b9, "d900": #00479c);
-@debug map.get($color-primary-map, 'd50') @mixin my-color($n: 'primary', $d) {
+@debug map.get($color-primary-map, 'd50');
+@mixin my-color($n: 'primary', $d) {
     @if $n=='primary'OR $n=='complementary' {}
     @else {
         @error "The first param of the function 'my-color' must either 'primary' or 'complementary'"
