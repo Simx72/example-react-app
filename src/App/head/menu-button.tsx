@@ -26,7 +26,7 @@ class MenuOption extends Component<MenuOptionProps> {
 
 interface ButtonWithMenuProps {
   ButtonClass: (typeof TopAppBarIcon)
-  children: MenuOption[]
+  children: MenuOption[] | MenuOption
   onSelect?: (index: number, item: Element) => void
 }
 interface ButtonWithMenuStates {
@@ -75,18 +75,20 @@ class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates
           onClose={this.onClose}
         >
           <MenuList style={{ overflow: 'hidden' }} >
-            {
-              this.props.children.map((option, index) => (
-                <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
-                  <MenuListItemText primaryText={option.props.text} />
-                  {(() => {
-                    if (typeof option.props.icon != 'undefined') return (
-                      <MenuListItemGraphic graphic={<MaterialIcon icon={option.props.icon} />} />
-                    )
-                  })()}
-                </MenuListItem>
-              ))
-            }
+            {(() => {
+              let options = this.props.children
+              if (typeof options == 'array')
+                options.map((option, index) => (
+                  <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
+                    <MenuListItemText primaryText={option.props.text} />
+                    {(() => {
+                      if (typeof option.props.icon != 'undefined') return (
+                        <MenuListItemGraphic graphic={<MaterialIcon icon={option.props.icon} />} />
+                      )
+                    })()}
+                  </MenuListItem>
+                ))
+            })()}
           </MenuList>
         </Menu>
       </>
