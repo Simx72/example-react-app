@@ -38,10 +38,10 @@ interface ButtonWithMenuProps {
 }
 interface ButtonWithMenuStates {
   coordinates: {
-    x: 0,
-    y: 0
+    x: number,
+    y: number
   },
-  open: false
+  open: boolean
 }
 
 export class ButtonWithMenu<ButtonWithMenuProps, ButtonWithMenuStates> {
