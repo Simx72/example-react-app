@@ -1,5 +1,5 @@
 import { Grid, Row, Cell } from '@material/react-layout-grid';
-import * as Chart from 'chart.js/auto';
+import * as Chart from 'chart.js';
 import { useGet } from 'restful-react';
 import { Chart1 } from './chart';
 
