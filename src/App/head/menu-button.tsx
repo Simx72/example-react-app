@@ -6,11 +6,11 @@ import { Component, MouseEvent as ReactMouseEvent } from 'react';
 let MenuOption = (props: { text: string, icon?: string, key?: string | number }) => (
   <MenuListItem key={props.key} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
     <MenuListItemText primaryText={props.text} />
-    {(() => {
+    {/*(() => {
       if (typeof props.icon != 'undefined') return (
         <MenuListItemGraphic graphic={<MaterialIcon icon={props.icon} />} />
       )
-    })()}
+    })()*/}
   </MenuListItem>
 )
 
