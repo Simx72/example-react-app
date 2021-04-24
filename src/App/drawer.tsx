@@ -82,11 +82,11 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
                 <ListItemText primaryText="Home" />
               </ListItem>
               <ListItem href="/ibm-stock-market" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
-                <ListItemGraphic graphic={<MaterialIcon className="material-icons-rounded" icon='trending_up' />} />
+                <ListItemGraphic graphic={<MaterialIcon icon='trending_up' />} />
                 <ListItemText primaryText="IBM Stock Market" />
               </ListItem>
               <ListItem href="/population" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
-                <ListItemGraphic graphic={<MaterialIcon className="material-icons-rounded" icon='trending_up' />} />
+                <ListItemGraphic graphic={<MaterialIcon icon='leaderboard' />} />
                 <ListItemText primaryText="Population" />
               </ListItem>
             </List>
