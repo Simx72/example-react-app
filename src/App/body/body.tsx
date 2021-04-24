@@ -3,7 +3,7 @@ import MaterialIcon from '@material/react-material-icon';
 import * as Chart from 'react-chartjs-2';
 
 const AppBody = () => (
-  <div id="App-body">
+  <div id="App-body" className="l-wrap">
     <Card>
       <CardPrimaryContent>
         <h1>Header</h1>
