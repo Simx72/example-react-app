@@ -78,11 +78,11 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
           <DrawerContent>
             <List singleSelection selectedIndex={this.state.selectedIndex}>
               <ListItem href="/" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
-                <ListItemGraphic graphic={<MaterialIcon icon='home' />} />
+                <ListItemGraphic graphic={<MaterialIcon className="material-icons-rounded" icon='home' />} />
                 <ListItemText primaryText="Home" />
               </ListItem>
               <ListItem href="/chart-1" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
-                <ListItemGraphic graphic={<MaterialIcon className="material-icons-outlined" icon='trending_up' />} />
+                <ListItemGraphic graphic={<MaterialIcon className="material-icons-rounded" icon='trending_up' />} />
                 <ListItemText primaryText="Chart 1" />
               </ListItem>
             </List>
