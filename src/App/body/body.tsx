@@ -5,7 +5,7 @@ import * as Chart from 'react-chartjs-2';
 const AppBody = () => (
   <div id="App-body">
     <Row>
-      <Col width={3}>
+      <Col lg={6}>
         <Card>
           <CardPrimaryContent>
               <Chart.Bar
