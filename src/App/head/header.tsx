@@ -41,6 +41,10 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
     })
   }
 
+  onMenuClose = () => {
+
+  }
+
   render = () => (
     <TopAppBar>
       <TopAppBarRow>
@@ -55,7 +59,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
           <TopAppBarIcon actionItem tabIndex={0} onClick={this.onMenuClick}>
             <MaterialIcon hasRipple icon='settings' />
           </TopAppBarIcon>
-          <NavBarMenu coordinates={this.state.navBarMenuStates.coordinates} open={this.state.navBarMenuStates.open} />
+          <NavBarMenu coordinates={this.state.navBarMenuStates.coordinates} open={this.state.navBarMenuStates.open} onClose={() => this.onMenuClose()} />
         </TopAppBarSection>
       </TopAppBarRow>
     </TopAppBar>
