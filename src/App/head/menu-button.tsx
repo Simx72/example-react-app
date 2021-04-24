@@ -26,7 +26,7 @@ class MenuOption extends Component<MenuOptionProps> {
 
 interface ButtonWithMenuProps {
   ButtonClass: (typeof TopAppBarIcon)
-  children: (typeof MenuOption[] | typeof MenuOption)
+  children: MenuOption
   onSelect?: (index: number, item: Element) => void
 }
 interface ButtonWithMenuStates {
