@@ -6,20 +6,11 @@ import { Component, MouseEvent as ReactMouseEvent } from 'react';
 interface MenuOptionProps {
   text: string,
   icon?: string,
-  key?: string | number
-}
-
-class MenuOption extends Component<MenuOptionProps> {
-  render() {
-    return (
-      <MenuOption/>
-    )
-  }
 }
 
 interface ButtonWithMenuProps {
   ButtonClass: (typeof TopAppBarIcon)
-  children: MenuOption[] | MenuOption
+  data: MenuOptionProps[]
   onSelect?: (index: number, item: Element) => void
 }
 interface ButtonWithMenuStates {
@@ -92,4 +83,4 @@ class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates
   }
 }
 
-export { MenuOption, ButtonWithMenu }
+export { ButtonWithMenu }
