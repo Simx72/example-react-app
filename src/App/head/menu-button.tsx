@@ -1,5 +1,6 @@
 import MaterialIcon from "@material/react-material-icon";
 import Menu, { MenuList, MenuListItem, MenuListItemGraphic, MenuListItemText } from "@material/react-menu";
+import { Component } from "react";
 
 
 let menuOptions: { text: string; icon: string }[];
@@ -44,7 +45,7 @@ interface ButtonWithMenuStates {
   open: boolean
 }
 
-export class ButtonWithMenu<ButtonWithMenuProps, ButtonWithMenuStates> {
+export class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates> {
 
 }
 
