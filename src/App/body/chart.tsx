@@ -92,4 +92,4 @@ const Chart2 = () => (
 
 
 
-export { Chart1 }
+export { Chart1, Chart2 }
