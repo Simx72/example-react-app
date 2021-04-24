@@ -62,16 +62,13 @@ const Chart2 = () => {
 
   let stockMarketData: { date: Date, open: number, high: number, low: number, close: number, volume: number }[] = []
   if (data.data != null) {
-    if ("Meta Data" in data.data) {
-      if (data.data["Meta Data"] != null) {
-        let meta = data.data["Meta Data"] as { [c: string]: string }
-        stockMetaData.information = meta["1. Information"]
-        stockMetaData.symbol = meta["2. Symbol"]
-        stockMetaData.lastRefreshed = meta["3. Last Refreshed"]
-        stockMetaData.outputSize = meta["4. Output Size"]
-        stockMetaData.timeZone = meta["5. Time Zone"]
-      }
-    }
+    
+    let meta = data.data["Meta Data"] as { [c: string]: string }
+    stockMetaData.information = meta["1. Information"]
+    stockMetaData.symbol = meta["2. Symbol"]
+    stockMetaData.lastRefreshed = meta["3. Last Refreshed"]
+    stockMetaData.outputSize = meta["4. Output Size"]
+    stockMetaData.timeZone = meta["5. Time Zone"]
 
     for (const date in data.data["Time Series (Daily)"]) {
       const info = data.data["Time Series (Daily)"][date]
