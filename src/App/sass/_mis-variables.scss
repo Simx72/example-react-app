@@ -2,32 +2,127 @@ $default-font: 'Dosis',
 Arial,
 Helvetica,
 sans-serif !important;
-@mixin my-color($n: 'primary', $d) {
-    @if $n=='primary'OR $n=='complementary' {}
-    @else {
-        @error "The first param of the function 'my-color' must either 'primary' or 'complementary'"
+@function my-color($n: 'primary', $d: 'default') {
+    @if $n=='primary'OR $n=='complementary' {
+        @if $n='primary' {
+            @if $d=='50' {
+                @return #e2f2fb;
+            }
+            @if $d=='100' {
+                @return #b8ddf7;
+            }
+            @if $d=='200' {
+                @return #8bc9f3;
+            }
+            @if $d=='300' {
+                @return #5bb3ee;
+            }
+            @if $d=='400' {
+                @return #30a3ec;
+            }
+            @if $d=='500' {
+                @return #0094ea;
+            }
+            @if $d=='600' {
+                @return #0087dd;
+            }
+            @if $d=='700' {
+                @return #0075cb;
+            }
+            @if $d=='800' {
+                @return #0064b9;
+            }
+            @if $d=='900' {
+                @return #00479c;
+            }
+            @if $d=='default' {
+                @return #5bb3ee;
+            }
+        }
+        @if $n='complementary' {
+            @if $d=='50' {
+                @return #fffeed;
+            }
+            @if $d=='100' {
+                @return #fffad0;
+            }
+            @if $d=='200' {
+                @return #fff5b2;
+            }
+            @if $d=='300' {
+                @return #fff096;
+            }
+            @if $d=='400' {
+                @return #ffeb81;
+            }
+            @if $d=='500' {
+                @return #fde670;
+            }
+            @if $d=='600' {
+                @return #ffdd72;
+            }
+            @if $d=='700' {
+                @return #ffce70;
+            }
+            @if $d=='800' {
+                @return #fbb868;
+            }
+            @if $d=='900' {
+                @return #ee965b;
+            }
+            @if $d=='default' {
+                @return #ee965b;
+            }
+        }
+        @else {
+            @error "The first param of the function 'my-color' must either 'primary' or 'complementary'"
+        }
     }
 }
 
-$color-primary-50: #e2f2fb;
-$color-primary-100: #b8ddf7;
-$color-primary-200: #8bc9f3;
-$color-primary-300: #5bb3ee;
-$color-primary-400: #30a3ec;
-$color-primary-500: #0094ea;
-$color-primary-600: #0087dd;
-$color-primary-700: #0075cb;
-$color-primary-800: #0064b9;
-$color-primary-900: #00479c;
-$color-primary: #5bb3ee;
-$color-complementary-50: #fffeed;
-$color-complementary-100: #fffad0;
-$color-complementary-200: #fff5b2;
-$color-complementary-300: #fff096;
-$color-complementary-400: #ffeb81;
-$color-complementary-500: #fde670;
-$color-complementary-600: #ffdd72;
-$color-complementary-700: #ffce70;
-$color-complementary-800: #fbb868;
-$color-complementary-900: #ee965b;
-$color-complementary: #ee965b;
+:root {
+    --color-primary-50: #e2f2fb;
+    --color-primary-100: #b8ddf7;
+    --color-primary-200: #8bc9f3;
+    --color-primary-300: #5bb3ee;
+    --color-primary-400: #30a3ec;
+    --color-primary-500: #0094ea;
+    --color-primary-600: #0087dd;
+    --color-primary-700: #0075cb;
+    --color-primary-800: #0064b9;
+    --color-primary-900: #00479c;
+    --color-primary: #5bb3ee;
+    --color-complementary-50: #fffeed;
+    --color-complementary-100: #fffad0;
+    --color-complementary-200: #fff5b2;
+    --color-complementary-300: #fff096;
+    --color-complementary-400: #ffeb81;
+    --color-complementary-500: #fde670;
+    --color-complementary-600: #ffdd72;
+    --color-complementary-700: #ffce70;
+    --color-complementary-800: #fbb868;
+    --color-complementary-900: #ee965b;
+    --color-complementary: #ee965b;
+    $color-primary-50: #e2f2fb;
+    $color-primary-100: #b8ddf7;
+    $color-primary-200: #8bc9f3;
+    $color-primary-300: #5bb3ee;
+    $color-primary-400: #30a3ec;
+    $color-primary-500: #0094ea;
+    $color-primary-600: #0087dd;
+    $color-primary-700: #0075cb;
+    $color-primary-800: #0064b9;
+    $color-primary-900: #00479c;
+    $color-primary: #5bb3ee;
+    $color-complementary-50: #fffeed;
+    $color-complementary-100: #fffad0;
+    $color-complementary-200: #fff5b2;
+    $color-complementary-300: #fff096;
+    $color-complementary-400: #ffeb81;
+    $color-complementary-500: #fde670;
+    $color-complementary-600: #ffdd72;
+    $color-complementary-700: #ffce70;
+    $color-complementary-800: #fbb868;
+    $color-complementary-900: #ee965b;
+    $color-complementary: #ee965b;
+}
