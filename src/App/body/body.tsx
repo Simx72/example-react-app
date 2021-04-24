@@ -6,7 +6,7 @@ const AppBody = () => (
     <Card>
       <CardPrimaryContent>
         <h1>Header</h1>
-        <CardMedia square imageUrl='./my/fancy/image.png' />
+        <CardMedia square imageUrl="https://cdn.shopify.com/s/files/1/0229/0839/files/Busqueda_de_imagenes_3_large.jpg?v=1578328497" />
       </CardPrimaryContent>
 
       <CardActions>
