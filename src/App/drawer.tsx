@@ -1,6 +1,6 @@
 import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerSubtitle, DrawerTitle } from "@material/react-drawer";
 import List, { ListItem, ListItemGraphic, ListItemText } from "@material/react-list";
-import MaterialIcon from "@material/react-material-icon";
+import MaterialIcon from "@material/react-material-icon/index";
 import { TopAppBarFixedAdjust } from "@material/react-top-app-bar";
 import { Component } from "react";
 import { AppBody } from "./body/body";
@@ -68,10 +68,10 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
         >
           <DrawerHeader>
             <DrawerTitle tag='h2'>
-              @nombre_de_usuario
+              @username
             </DrawerTitle>
             <DrawerSubtitle tag='em'>
-              cualquier.correo@gmail.com
+              someone@gmail.com
             </DrawerSubtitle>
           </DrawerHeader>
 
@@ -79,11 +79,11 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
             <List singleSelection selectedIndex={this.state.selectedIndex}>
               <ListItem href="/" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
                 <ListItemGraphic graphic={<MaterialIcon icon='home' />} />
-                <ListItemText primaryText="Inicio" />
+                <ListItemText primaryText="Home" />
               </ListItem>
-              <ListItem href="/otro" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
-                <ListItemGraphic graphic={<MaterialIcon icon='favorite' />} />
-                Cualquier otra cosa
+              <ListItem href="/chart-1" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
+                <ListItemGraphic graphic={<MaterialIcon className="material-icons-outlined" icon='trending_up' />} />
+                <ListItemText primaryText="Chart 1" />
               </ListItem>
             </List>
           </DrawerContent>
