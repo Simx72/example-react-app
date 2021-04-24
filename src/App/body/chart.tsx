@@ -69,7 +69,8 @@ const Chart2 = () => {
     <div id="App-body">
       <Card>
         <CardPrimaryContent style={{ padding: '1rem' }} >
-          <h1>[{data.data["2. Symbol"]}]&nbsp;{ data.data["1. Information"] }</h1>
+          <h2>[{data.data["2. Symbol"]}]&nbsp;{ data.data["1. Information"] }</h2>
+          <h5>Last refreshed { data.data["3. Last Refreshed"] }</h5>
           <Chart.Line
             type="line"
 
