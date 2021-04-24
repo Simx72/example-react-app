@@ -29,8 +29,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
     }
   }
 
-  onMenuClick(ev: ReactMouseEvent<HTMLElement, MouseEvent>) {
-    console.log(this)
+  onMenuClick = (ev: ReactMouseEvent<HTMLElement, MouseEvent>) => {
     this.setState({
       navBarMenuStates: {
         coordinates: {
@@ -54,7 +53,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
           <TopAppBarIcon actionItem tabIndex={0} onClick={this.onMenuClick}>
-            <MaterialIcon hasRipple={true} icon='settings' />
+            <MaterialIcon hasRipple icon='settings' />
           </TopAppBarIcon>
           <NavBarMenu coordinates={this.state.navBarMenuStates.coordinates} open={this.state.navBarMenuStates.open} />
         </TopAppBarSection>
