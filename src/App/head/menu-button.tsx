@@ -16,7 +16,7 @@ let MenuOption = (props: { text: string, icon?: string, key?: string | number })
 
 interface ButtonWithMenuProps {
   ButtonClass: (typeof TopAppBarIcon)
-  children: typeof MenuOption[]
+  children: (typeof MenuOption[] | typeof MenuOption)
   onSelect?: (index: number, item: Element) => void
 }
 interface ButtonWithMenuStates {
