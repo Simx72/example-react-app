@@ -11,7 +11,7 @@ menuOptions = [
   { text: 'Paste', icon: 'favorite' },
 ];
 
-const NavBarMenu = (props: {open: boolean, coordinates: { x: number, y: number }, onClose?: () => void, onSelect?: (index: number, item: Element) => void}) => (
+const NavBarMenu = (props: { open: boolean, coordinates: { x: number, y: number }, onClose?: () => void, onSelect?: (index: number, item: Element) => void }) => (
   <Menu
     open={props.open}
     coordinates={props.coordinates}
@@ -28,5 +28,24 @@ const NavBarMenu = (props: {open: boolean, coordinates: { x: number, y: number }
     </MenuList>
   </Menu>
 );
+
+
+export function MenuItem(props: any) {
+
+}
+
+interface ButtonWithMenuProps {
+}
+interface ButtonWithMenuStates {
+  coordinates: {
+    x: 0,
+    y: 0
+  },
+  open: false
+}
+
+export class ButtonWithMenu<ButtonWithMenuProps, ButtonWithMenuStates> {
+
+}
 
 export { NavBarMenu };
