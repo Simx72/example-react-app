@@ -4,12 +4,12 @@ import { Chart1 } from './chart';
 const AppBody = () => (
   <div id="App-body">
     <Grid>
-        <Row>
+      <Row>
         <Cell columns={6}>
           <Chart1 />
-          </Cell>
-        </Row>
-      </Grid>
+        </Cell>
+      </Row>
+    </Grid>
   </div>
 )
 
