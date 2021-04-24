@@ -10,7 +10,7 @@
         }
         @for $dark from 1 through 9 {
             .#{$name}-#{$dark} {
-                @debug my-color($name, $dark * 100);
+                color: my-color($name, $dark * 100);
             }
         }
     }
