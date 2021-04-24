@@ -10,10 +10,10 @@ const AppBody = () => {
     <div id="App-body">
       <Grid>
         <Row>
-          <Cell columns={6}>
+          {/* <Cell columns={6}>
             <Chart1 />
-          </Cell>
-          <Cell columns={6}>
+          </Cell> */}
+          <Cell columns={12}>
             <Chart2 />
           </Cell>
         </Row>
