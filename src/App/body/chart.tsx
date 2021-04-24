@@ -53,7 +53,7 @@ const Chart2 = () => {
       low = info["3. low"],
       close = info["4. close"],
       volume = info["5. volume"];
-    console.log(open, high, low, close, volume)
+    console.log(date, open, high, low, close, volume)
   }
   console.log(stockMarketData)
 
