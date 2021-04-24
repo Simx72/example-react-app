@@ -1432,6 +1432,18 @@
   dependencies:
     tslib "^1.9.3"
 
+"@material/card@^2.1.1":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@material/card/-/card-2.3.0.tgz#f59ac3b16d21d21af5747a530624f14622286c29"
+  integrity sha512-udVIanyz3KhZ8IfZjX2Yg+YJxU+oYdP9RbCM3hl7l1aqvNr8WSAy/YZ60Ue54fuN+0CpXiNpz1J8GyDktUZKKg==
+  dependencies:
+    "@material/elevation" "^1.1.0"
+    "@material/feature-targeting" "^0.44.1"
+    "@material/ripple" "^2.3.0"
+    "@material/rtl" "^0.42.0"
+    "@material/shape" "^1.1.1"
+    "@material/theme" "^1.1.0"
+
 "@material/checkbox@^2.1.1":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@material/checkbox/-/checkbox-2.3.0.tgz#3fd2d8ad4d602b8486f841fc561e01107f06b4a3"
@@ -1563,6 +1575,15 @@
     "@material/ripple" "^1.1.0"
     "@material/theme" "^1.1.0"
     tslib "^1.9.3"
+
+"@material/react-card@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@material/react-card/-/react-card-0.15.0.tgz#e76a4f3c21b82802bb52b600c62535165c143b71"
+  integrity sha512-84+hi8SipYPRzBf7NX/3K/FElx/yPGrts7Ip1DnOVcvTXlI4jVTNg0UTdGxEgG+xLdsjo9gQLMsz1EA4Y7nOCA==
+  dependencies:
+    "@material/card" "^2.1.1"
+    "@material/react-ripple" "^0.15.0"
+    classnames "^2.2.6"
 
 "@material/react-checkbox@^0.15.0":
   version "0.15.0"
