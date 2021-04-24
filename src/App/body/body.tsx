@@ -33,6 +33,8 @@ const AppBody = () => (
           <CardActions>
             <CardActionIcons>
               <MaterialIcon icon='favorite' />
+              <MaterialIcon icon='favorite' />
+              <MaterialIcon icon='favorite' />
             </CardActionIcons>
           </CardActions>
         </Card>
