@@ -77,7 +77,7 @@ class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates
           <MenuList style={{ overflow: 'hidden' }} >
             {(() => {
               let options = this.props.children
-              if (typeof options == 'array')
+              if ('lenght' in options)
                 options.map((option, index) => (
                   <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
                     <MenuListItemText primaryText={option.props.text} />
