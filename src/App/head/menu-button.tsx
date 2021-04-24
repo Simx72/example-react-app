@@ -59,23 +59,16 @@ class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates
           onClose={this.onClose}
         >
           <MenuList style={{ overflow: 'hidden' }} >
-            {(() => {
-              let options = this.props.children
-              if (options instanceof Array) {
-                return options.map((option: any, index: any) => (
-                  <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
-                    <MenuListItemText primaryText={option.props.text} />
-                    {(() => {
-                      if (typeof option.props.icon != 'undefined') return (
-                        <MenuListItemGraphic graphic={<MaterialIcon icon={option.props.icon} />} />
-                      )
-                    })()}
-                  </MenuListItem>
-                ))
-              } else {
-                return options;
-              }
-            })()}
+            {this.props.options.map((option: any, index: any) => (
+              <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
+                <MenuListItemText primaryText={option.props.text} />
+                {(() => {
+                  if (typeof option.props.icon != 'undefined') return (
+                    <MenuListItemGraphic graphic={<MaterialIcon icon={option.props.icon} />} />
+                  )
+                })()}
+              </MenuListItem>
+            ))}
           </MenuList>
         </Menu>
       </>
