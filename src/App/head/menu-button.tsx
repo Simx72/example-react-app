@@ -19,7 +19,7 @@ const NavBarMenu = (props: {open: boolean, coordinates: { x: number, y: number }
   >
     <MenuList>
       {menuOptions.map((option, index) => (
-        <MenuListItem key={index}>
+        <MenuListItem key={index} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
           <MenuListItemText primaryText={option.text} />
           <MenuListItemGraphic graphic={<MaterialIcon icon={option.icon} />} />
         </MenuListItem>
