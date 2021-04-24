@@ -61,6 +61,10 @@ const Chart2 = () => {
     if (data["Meta Data"] != null) {
       let meta = data["Meta Data"] as { [c: string]: string }
       stockMetaData.information = meta["1. Information"]
+      stockMetaData.information = meta["2. Symbol"]
+      stockMetaData.information = meta["3. Last Refreshed"]
+      stockMetaData.information = meta["4. Output Size"]
+      stockMetaData.information = meta["5. Time Zone"]
     }
   }
 
