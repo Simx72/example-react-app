@@ -3,16 +3,26 @@ import Menu, { MenuList, MenuListItem, MenuListItemGraphic, MenuListItemText } f
 import { TopAppBarIcon } from "@material/react-top-app-bar";
 import { Component, MouseEvent as ReactMouseEvent } from 'react';
 
-let MenuOption = (props: { text: string, icon?: string, key?: string | number }) => (
-  <MenuListItem key={props.key} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
-    <MenuListItemText primaryText={props.text} />
-    {(() => {
-      if (typeof props.icon != 'undefined') return (
-        <MenuListItemGraphic graphic={<MaterialIcon icon={props.icon} />} />
-      )
-    })()}
-  </MenuListItem>
-)
+interface MenuOptionProps {
+  text: string,
+  icon?: string,
+  key?: string | number
+}
+
+class MenuOption extends Component<MenuOptionProps> {
+  render() {
+    return (
+      <MenuListItem key={this.props.key} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
+        <MenuListItemText primaryText={this.props.text} />
+        {(() => {
+          if (typeof this.props.icon != 'undefined') return (
+            <MenuListItemGraphic graphic={<MaterialIcon icon={this.props.icon} />} />
+          )
+        })()}
+      </MenuListItem>
+    )
+  }
+}
 
 interface ButtonWithMenuProps {
   ButtonClass: (typeof TopAppBarIcon)
