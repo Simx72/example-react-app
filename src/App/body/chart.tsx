@@ -61,10 +61,10 @@ const Chart2 = () => {
     if (data["Meta Data"] != null) {
       let meta = data["Meta Data"] as { [c: string]: string }
       stockMetaData.information = meta["1. Information"]
-      stockMetaData.information = meta["2. Symbol"]
-      stockMetaData.information = meta["3. Last Refreshed"]
-      stockMetaData.information = meta["4. Output Size"]
-      stockMetaData.information = meta["5. Time Zone"]
+      stockMetaData.symbol = meta["2. Symbol"]
+      stockMetaData.lastRefreshed = meta["3. Last Refreshed"]
+      stockMetaData.outputSize = meta["4. Output Size"]
+      stockMetaData.timeZone = meta["5. Time Zone"]
     }
   }
 
@@ -93,8 +93,8 @@ const Chart2 = () => {
     <div id="App-body">
       <Card>
         <CardPrimaryContent style={{ padding: '1rem' }} >
-          <h2>[{data.data["2. Symbol"]}]&nbsp;{data.data["1. Information"]}</h2>
-          <h5>Last refreshed {data.data["3. Last Refreshed"]}</h5>
+          <h2>[{stockMetaData.symbol}]&nbsp;{stockMetaData.information}</h2>
+          <h5>Last refreshed {stockMetaData.lastRefreshed}</h5>
           <Chart.Line
             type="line"
 
