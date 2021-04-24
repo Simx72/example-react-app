@@ -52,7 +52,7 @@ class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates
         {(() => {
           if (this.props.ButtonClass === 'top-app-bar-icon')
             return (
-              <TopAppBarIcon tabIndex={0} onClick={this.onClick}>
+              <TopAppBarIcon actionItem tabIndex={0} onClick={this.onClick}>
                 <MaterialIcon hasRipple icon='settings' />
               </TopAppBarIcon>
             )
