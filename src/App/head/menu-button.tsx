@@ -12,14 +12,7 @@ interface MenuOptionProps {
 class MenuOption extends Component<MenuOptionProps> {
   render() {
     return (
-      <MenuListItem key={this.props.key} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
-        <MenuListItemText primaryText={this.props.text} />
-        {(() => {
-          if (typeof this.props.icon != 'undefined') return (
-            <MenuListItemGraphic graphic={<MaterialIcon icon={this.props.icon} />} />
-          )
-        })()}
-      </MenuListItem>
+      <div></div>
     )
   }
 }
