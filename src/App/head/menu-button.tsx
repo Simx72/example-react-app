@@ -54,6 +54,13 @@ interface ButtonWithMenuStates {
 }
 
 export class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates> {
+  state = {
+    coordinates: {
+      x: 0,
+      y: 0
+    },
+    open: false
+  }
 
   onClick = (ev: ReactMouseEvent<HTMLElement, MouseEvent>) => {
     this.setState({
