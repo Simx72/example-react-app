@@ -1,7 +1,24 @@
+import Card, { CardActionButtons, CardActionIcons, CardActions, CardMedia, CardPrimaryContent } from '@material/react-card';
 import * as Chart from 'react-chartjs-2';
 
 const AppBody = () => (
   <div id="App-body">
+    <Card>
+      <CardPrimaryContent>
+        <h1>Header</h1>
+        <CardMedia square imageUrl='./my/fancy/image.png' />
+      </CardPrimaryContent>
+
+      <CardActions>
+        <CardActionButtons>
+          <button>Click Me</button>
+        </CardActionButtons>
+
+        <CardActionIcons>
+          <i>Click Me Too!</i>
+        </CardActionIcons>
+      </CardActions>
+    </Card>
     <Chart.Bar
       type="bar"
       data={{
