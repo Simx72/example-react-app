@@ -9,7 +9,6 @@ const AppBody = () => (
         <Card>
           <CardPrimaryContent>
               <Chart.Bar
-                type="bar"
                 data={{
                   labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
                   datasets: [
