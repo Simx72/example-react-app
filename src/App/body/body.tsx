@@ -1,4 +1,4 @@
-import Card, { CardPrimaryContent } from '@material/react-card';
+import Card, { CardPrimaryContent, CardActions } from '@material/react-card';
 import { Row, Col } from 'react-grid-system';
 import * as Chart from 'react-chartjs-2';
 
@@ -7,7 +7,7 @@ const AppBody = () => (
     <Row>
       <Col lg={6}>
         <Card>
-          <CardPrimaryContent style={{ padding: '1rem' }}>
+          <CardPrimaryContent style={{ padding: '1rem' }} >
             <Chart.Bar
               type="bar"
               data={{
@@ -29,6 +29,9 @@ const AppBody = () => (
               }}
             />
           </CardPrimaryContent>
+          <CardActions>
+
+          </CardActions>
         </Card>
       </Col>
     </Row>
