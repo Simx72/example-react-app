@@ -1,6 +1,6 @@
 import { Grid, Row, Cell } from '@material/react-layout-grid';
 import { useGet } from 'restful-react';
-import { Chart1, Chart2 } from './chart';
+import { Chart2 } from './chart';
 
 const AppBody = () => {
 
