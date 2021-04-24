@@ -1,5 +1,5 @@
 import { Grid, Row, Cell } from '@material/react-layout-grid';
-import Chart from 'chart.js/auto';
+import * as Chart from 'chart.js/auto';
 import { useGet } from 'restful-react';
 import { Chart1 } from './chart';
 
@@ -15,7 +15,7 @@ const AppBody = () => {
             <Chart1 />
           </Cell>
           <Cell>
-            <Chart
+            <Chart.Line
               type="line"
 
               data={{
