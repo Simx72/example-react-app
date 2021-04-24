@@ -85,6 +85,10 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
                 <ListItemGraphic graphic={<MaterialIcon className="material-icons-rounded" icon='trending_up' />} />
                 <ListItemText primaryText="IBM Stock Market" />
               </ListItem>
+              <ListItem href="/population" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
+                <ListItemGraphic graphic={<MaterialIcon className="material-icons-rounded" icon='trending_up' />} />
+                <ListItemText primaryText="Population" />
+              </ListItem>
             </List>
           </DrawerContent>
         </Drawer>
