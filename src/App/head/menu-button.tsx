@@ -12,7 +12,7 @@ interface MenuOptionProps {
 class MenuOption extends Component<MenuOptionProps> {
   render() {
     return (
-      <div></div>
+      <MenuOption/>
     )
   }
 }
