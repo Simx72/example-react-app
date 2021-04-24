@@ -98,7 +98,7 @@ const Chart2 = () => {
             type="line"
 
             data={{
-              labels: stockMarketData.map(val => val.date.getFullYear() + ' - ' + val.date.getMonth() + ' - ' + val.date.getDay),
+              labels: stockMarketData.map(val => val.date.getFullYear() + ' - ' + val.date.getMonth() + ' - ' + val.date.getDay()),
               datasets: [{
                 data: stockMarketData.map(val => val.open),
                 label: "Open",
