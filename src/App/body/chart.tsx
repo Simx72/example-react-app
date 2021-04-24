@@ -44,8 +44,8 @@ const Chart2 = () => {
 
   let data = useGet('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=demo')
 
+  let stockMarketData: { date: Date, open: number, high: number, low: number, close: number, volume: number }[] = []
   if (data.data != null) {
-    let stockMarketData: { open: number, high: number, low: number, close: number, volume: number }[] = []
 
     for (const date in data.data["Time Series (Daily)"]) {
       const info = data.data["Time Series (Daily)"][date]
@@ -54,7 +54,14 @@ const Chart2 = () => {
         low = info["3. low"],
         close = info["4. close"],
         volume = info["5. volume"];
-      console.log(date, open, high, low, close, volume)
+      stockMarketData.push({
+        date: new Date(date),
+        open,
+        close,
+        high,
+        volume,
+        low
+      })
     }
     console.log(stockMarketData)
   }
