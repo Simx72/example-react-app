@@ -96,11 +96,6 @@ const Chart2 = () => {
                 label: "Low",
                 borderColor: "#e8c3b9",
                 fill: false
-              }, {
-                data: stockMarketData.map(val => val.volume),
-                label: "Volume",
-                borderColor: "#c45850",
-                fill: false
               }
               ]
             }}
