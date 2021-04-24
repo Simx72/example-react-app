@@ -38,7 +38,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
               },
               {
                 text: 'Log Out',
-                icon: 'exit'
+                icon: 'exit_to_app'
               },
             ]} />
         </TopAppBarSection>
