@@ -13,7 +13,7 @@ const AppBody = () => {
           <Cell columns={6}>
             <Chart1 />
           </Cell>
-          <Cell>
+          <Cell columns={6}>
             <Chart2 />
           </Cell>
         </Row>
