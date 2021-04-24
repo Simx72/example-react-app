@@ -18,7 +18,7 @@ const NavBarMenu = (props: {open: boolean, coordinates: { x: number, y: number }
     onSelected={props.onSelect}
     onClose={props.onClose}
   >
-    <MenuList>
+    <MenuList style={{ overflow: 'hidden' }}>
       {menuOptions.map((option, index) => (
         <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
           <MenuListItemText primaryText={option.text} />
