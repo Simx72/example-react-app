@@ -29,11 +29,11 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
             ButtonClass='top-app-bar-icon'
             options={[
               {
-                text: 'Option #1',
+                text: 'Option 1',
                 icon: 'face'
               },
               {
-                text: 'Option #2',
+                text: 'Option 2',
                 icon: 'favorite'
               },
               {
