@@ -6,8 +6,9 @@ import { Component } from "react";
 import { AppBody } from "./body/body";
 import { AppHeader } from "./head/header";
 import appInfo from '../app-info.json';
+import { Container } from "react-grid-system";
 
-interface AppDrawerProps {}
+interface AppDrawerProps { }
 interface AppDrawerStates {
   selectedIndex: number;
   drawerOpen: boolean;
@@ -91,7 +92,9 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
         <DrawerAppContent className='drawer-app-content'>
           <AppHeader titulo={appInfo.name} onMenuClick={() => this.toggleOpen()} />
           <TopAppBarFixedAdjust>
-            <AppBody />
+            <Container>
+              <AppBody />
+            </Container>
           </TopAppBarFixedAdjust>
         </DrawerAppContent>
       </div>
