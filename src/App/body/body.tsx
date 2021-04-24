@@ -15,7 +15,7 @@ const AppBody = () => {
           </Cell>
         </Row>
       </Grid>
-      <div>{data}</div>
+      <div>{data.toString()}</div>
     </div>
   )
 }
