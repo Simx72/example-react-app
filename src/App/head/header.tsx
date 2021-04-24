@@ -27,6 +27,9 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
         <TopAppBarSection align='end' role='toolbar'>
           <ButtonWithMenu 
             ButtonClass='top-app-bar-icon'
+            onSelect={(index, item) => {
+              console.log(index, item)
+            }}
             options={[
               {
                 text: 'Option 1',
