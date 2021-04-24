@@ -32,8 +32,8 @@ const AppBody = () => (
           </CardPrimaryContent>
           <CardActions>
             <CardActionIcons>
-              <MaterialIcon icon='favorite' />
-              <MaterialIcon icon='favorite' />
+              <MaterialIcon icon='more_vert' />
+              <MaterialIcon icon='more' />
               <MaterialIcon icon='favorite' />
             </CardActionIcons>
           </CardActions>
