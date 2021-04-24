@@ -10,7 +10,7 @@ $mdc-typography-font-family: $default-font;
 @import '@material/react-layout-grid/index.scss';
 @import './material-icons.scss';
 .mdc-top-app-bar {
-    @include mdc-top-app-bar-fill-color-accessible($color-primary);
+    @include mdc-top-app-bar-fill-color-accessible(my-color());
 }
 
 .mdc-top-app-bar__title {
