@@ -8,26 +8,11 @@ interface AppHeaderProps {
   onMenuClick: () => void
 }
 interface AppHeaderStates {
-  navBarMenuStates: {
-    coordinates: {
-      x: number;
-      y: number
-    }
-    open: boolean
-  }
 }
 
 
 class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
-  state = {
-    navBarMenuStates: {
-      coordinates: {
-        x: 0,
-        y: 0
-      },
-      open: false
-    }
-  }
+  state = {}
 
   render = () => (
     <TopAppBar>
