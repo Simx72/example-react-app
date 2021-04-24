@@ -11,6 +11,7 @@
     "@material/react-menu": "^0.15.0",
     "@material/react-ripple": "^0.15.0",
     "@material/react-top-app-bar": "^0.15.0",
+    "@material/typography": "2.3.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
