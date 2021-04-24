@@ -3,16 +3,19 @@ import Menu, { MenuList, MenuListItem, MenuListItemGraphic, MenuListItemText } f
 import { TopAppBarIcon } from "@material/react-top-app-bar";
 import { Component, MouseEvent as ReactMouseEvent } from 'react';
 
-type MenuOptions = { text: string; icon: string }[];
+interface MenuOption {
+  text: string
+  icon: string
+}
 
-let menuOptions: MenuOptions;
+let menuOptions: MenuOption[]
 menuOptions = [
   { text: 'Un texto bien largoooo', icon: 'favorite' },
   { text: 'Edit', icon: 'favorite' },
   { text: 'Cut', icon: 'favorite' },
   { text: 'Copy', icon: 'favorite' },
   { text: 'Paste', icon: 'favorite' },
-];
+]
 
 const NavBarMenu = (props: { open: boolean, coordinates: { x: number, y: number }, onClose?: () => void, onSelect?: (index: number, item: Element) => void }) => (
   <Menu
@@ -30,7 +33,7 @@ const NavBarMenu = (props: { open: boolean, coordinates: { x: number, y: number 
       ))}
     </MenuList>
   </Menu>
-);
+)
 
 
 export function MenuItem(props: any) {
@@ -39,6 +42,7 @@ export function MenuItem(props: any) {
 
 interface ButtonWithMenuProps {
   ButtonClass: (typeof TopAppBarIcon)
+  options?: MenuOption[]
   onSelect?: (index: number, item: Element) => void
 }
 interface ButtonWithMenuStates {
@@ -80,7 +84,7 @@ export class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMen
           onClose={this.onClose}
         >
           <MenuList style={{ overflow: 'hidden' }}>
-            {menuOptions.map((option, index) => (
+            {this.props.options?.map((option, index) => (
               <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
                 <MenuListItemText primaryText={option.text} />
                 <MenuListItemGraphic graphic={<MaterialIcon icon={option.icon} />} />
@@ -93,4 +97,4 @@ export class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMen
   }
 }
 
-export { NavBarMenu };
+export { NavBarMenu }
