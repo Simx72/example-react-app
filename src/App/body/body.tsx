@@ -7,7 +7,7 @@ const AppBody = () => (
     <Row>
       <Col lg={6}>
         <Card>
-          <CardPrimaryContent>
+          <CardPrimaryContent style={{ padding: '1rem' }}>
             <Chart.Bar
               type="bar"
               data={{
