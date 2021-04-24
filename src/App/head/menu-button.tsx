@@ -9,7 +9,7 @@ interface MenuOptionProps {
 }
 
 interface ButtonWithMenuProps {
-  ButtonClass: (typeof TopAppBarIcon)
+  ButtonClass: 'top-app-bar-icon'
   options: MenuOptionProps[]
   onSelect?: (index: number, item: Element) => void
 }
@@ -49,9 +49,14 @@ class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates
   render() {
     return (
       <>
-        <this.props.ButtonClass tabIndex={0} onClick={this.onClick}>
-          <MaterialIcon hasRipple icon='settings' />
-        </this.props.ButtonClass>
+        {(() => {
+          if (this.props.ButtonClass === 'top-app-bar-icon')
+            return (
+              <TopAppBarIcon tabIndex={0} onClick={this.onClick}>
+                <MaterialIcon hasRipple icon='settings' />
+              </TopAppBarIcon>
+            )
+        })()}
         <Menu
           open={this.state.open}
           coordinates={this.state.coordinates}
