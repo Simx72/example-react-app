@@ -4,7 +4,7 @@ import Menu, { MenuList, MenuListItem, MenuListItemGraphic, MenuListItemText } f
 
 let menuOptions: { text: string; icon: string }[];
 menuOptions = [
-  { text: 'Save', icon: 'favorite' },
+  { text: 'Un texto bien largoooo', icon: 'favorite' },
   { text: 'Edit', icon: 'favorite' },
   { text: 'Cut', icon: 'favorite' },
   { text: 'Copy', icon: 'favorite' },
