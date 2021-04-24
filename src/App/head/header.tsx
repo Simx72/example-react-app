@@ -1,6 +1,6 @@
 import TopAppBar, { TopAppBarIcon, TopAppBarRow, TopAppBarSection, TopAppBarTitle } from '@material/react-top-app-bar';
 import MaterialIcon from '@material/react-material-icon';
-import { ButtonWithMenu, MenuOption } from './menu-button';
+import { ButtonWithMenu } from './menu-button';
 import { Component } from 'react';
 
 interface AppHeaderProps {
@@ -25,9 +25,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
           <input type="hidden" value="render" data-testid="top-app-bar" />
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
-          <ButtonWithMenu ButtonClass={TopAppBarIcon}>
-            <MenuOption text='Opción 1' icon='favorite' />
-          </ButtonWithMenu>
+          <ButtonWithMenu ButtonClass={TopAppBarIcon} options={[]} />
         </TopAppBarSection>
       </TopAppBarRow>
     </TopAppBar>
