@@ -10,7 +10,7 @@ interface MenuOptionProps {
 
 interface ButtonWithMenuProps {
   ButtonClass: (typeof TopAppBarIcon)
-  data: MenuOptionProps[]
+  options: MenuOptionProps[]
   onSelect?: (index: number, item: Element) => void
 }
 interface ButtonWithMenuStates {
