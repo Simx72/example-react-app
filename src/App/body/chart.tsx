@@ -65,12 +65,11 @@ const Chart2 = () => {
     }
   }
 
-  // stockMarketData.filter(val => val.date.getDay() === 1)
-
   return (
     <div id="App-body">
       <Card>
         <CardPrimaryContent style={{ padding: '1rem' }} >
+          <h1>[{data.data["2. Symbol"]}]&nbsp;{ data.data["1. Information"] }</h1>
           <Chart.Line
             type="line"
 
