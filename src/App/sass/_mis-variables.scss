@@ -81,48 +81,11 @@ sans-serif !important;
 }
 
 :root {
-    --color-primary-50: $color-primary-50;
-    --color-primary-100: $color-primary-100;
-    --color-primary-200: $color-primary-200;
-    --color-primary-300: $color-primary-300;
-    --color-primary-400: $color-primary-400;
-    --color-primary-500: $color-primary-500;
-    --color-primary-600: $color-primary-600;
-    --color-primary-700: $color-primary-700;
-    --color-primary-800: $color-primary-800;
-    --color-primary-900: $color-primary-900;
-    --color-primary: $color-primary;
-    --color-complementary-50: $color-complementary-50;
-    --color-complementary-100: $color-complementary-100;
-    --color-complementary-200: $color-complementary-200;
-    --color-complementary-300: $color-complementary-300;
-    --color-complementary-400: $color-complementary-400;
-    --color-complementary-500: $color-complementary-500;
-    --color-complementary-600: $color-complementary-600;
-    --color-complementary-700: $color-complementary-700;
-    --color-complementary-800: $color-complementary-800;
-    --color-complementary-900: $color-complementary-900;
-    --color-complementary: $color-complementary;
-    $color-primary-50: #e2f2fb;
-    $color-primary-100: #b8ddf7;
-    $color-primary-200: #8bc9f3;
-    $color-primary-300: #5bb3ee;
-    $color-primary-400: #30a3ec;
-    $color-primary-500: #0094ea;
-    $color-primary-600: #0087dd;
-    $color-primary-700: #0075cb;
-    $color-primary-800: #0064b9;
-    $color-primary-900: #00479c;
-    $color-primary: #5bb3ee;
-    $color-complementary-50: #fffeed;
-    $color-complementary-100: #fffad0;
-    $color-complementary-200: #fff5b2;
-    $color-complementary-300: #fff096;
-    $color-complementary-400: #ffeb81;
-    $color-complementary-500: #fde670;
-    $color-complementary-600: #ffdd72;
-    $color-complementary-700: #ffce70;
-    $color-complementary-800: #fbb868;
-    $color-complementary-900: #ee965b;
-    $color-complementary: #ee965b;
+    @each $name in 'primary',
+    'complementary' {
+        @for $dark from 1 through 9 {
+            --color-#{$name}-#{$dark}: my-color($name, $dark * 100);
+        }
+        --color-#{$name}-50: my-color($name, 50);
+    }
 }
