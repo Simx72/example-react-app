@@ -1,6 +1,7 @@
-import Card, { CardPrimaryContent, CardActions } from '@material/react-card';
+import Card, { CardPrimaryContent, CardActions, CardActionIcons } from '@material/react-card';
 import { Row, Col } from 'react-grid-system';
 import * as Chart from 'react-chartjs-2';
+import MaterialIcon from '@material/react-material-icon';
 
 const AppBody = () => (
   <div id="App-body">
@@ -30,7 +31,9 @@ const AppBody = () => (
             />
           </CardPrimaryContent>
           <CardActions>
-
+            <CardActionIcons>
+              <MaterialIcon icon='favorite' />
+            </CardActionIcons>
           </CardActions>
         </Card>
       </Col>
