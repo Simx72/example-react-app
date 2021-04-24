@@ -44,8 +44,6 @@ const Chart2 = () => {
 
   let data = useGet('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=demo')
 
-  console.log(data)
-
   let stockMetaData: {
     "information": string
     "symbol": string
