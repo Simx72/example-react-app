@@ -2,6 +2,14 @@ $default-font: 'Dosis',
 Arial,
 Helvetica,
 sans-serif !important;
+@mixin my-color($n: 'primary', $d) {
+    @if $n=='primary' {}
+    @else if $n=='complementary' {}
+    @else {
+        @error "The first param of the function 'my-color' must either 'primary' or 'complementary'"
+    }
+}
+
 $color-primary-50: #e2f2fb;
 $color-primary-100: #b8ddf7;
 $color-primary-200: #8bc9f3;
