@@ -1,6 +1,6 @@
 import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerSubtitle, DrawerTitle } from "@material/react-drawer";
 import List, { ListItem, ListItemGraphic, ListItemText } from "@material/react-list";
-import MaterialIcon from "@material/react-material-icon/index";
+import MaterialIcon from "@material/react-material-icon";
 import { TopAppBarFixedAdjust } from "@material/react-top-app-bar";
 import { Component } from "react";
 import { AppBody } from "./body/body";
