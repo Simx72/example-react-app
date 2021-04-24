@@ -3,11 +3,14 @@
 @import '@material/react-material-icon/index.scss';
 @import '../mis-variables';
 .material-icons {
-    @each $n in 'primary',
+    @each $name in 'primary',
     'complementary' {
-        @for $d from 1 through 9 {
-            .color-#{$n}-#{$d * 100} {
-                color: $color-#{$n}-#{$d};
+        .#{$name}-50 {
+            color: my-color($name, 50);
+        }
+        @for $dark from 1 through 9 {
+            .#{$name}-#{$dark} {
+                color: my-color($name, $dark * 100);
             }
         }
     }
