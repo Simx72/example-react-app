@@ -1,7 +1,7 @@
 import TopAppBar, { TopAppBarIcon, TopAppBarRow, TopAppBarSection, TopAppBarTitle } from '@material/react-top-app-bar';
 import MaterialIcon from '@material/react-material-icon';
-import { NavBarMenu } from './menu-button';
-import { Component, MouseEvent as ReactMouseEvent } from 'react';
+import { ButtonWithMenu } from './menu-button';
+import { Component } from 'react';
 
 interface AppHeaderProps {
   titulo?: string,
@@ -29,30 +29,6 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
     }
   }
 
-  onMenuClick = (ev: ReactMouseEvent<HTMLElement, MouseEvent>) => {
-    this.setState({
-      navBarMenuStates: {
-        coordinates: {
-          x: ev.clientX,
-          y: ev.clientY
-        },
-        open: !this.state.navBarMenuStates.open
-      }
-    })
-  }
-
-  onMenuClose = () => {
-    this.setState({
-      navBarMenuStates: {
-        coordinates: {
-          x: this.state.navBarMenuStates.coordinates.x,
-          y: this.state.navBarMenuStates.coordinates.y
-        },
-        open: false
-      }
-    })
-  }
-
   render = () => (
     <TopAppBar>
       <TopAppBarRow>
@@ -64,10 +40,9 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
           <input type="hidden" value="render" data-testid="top-app-bar" />
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
-          <TopAppBarIcon actionItem tabIndex={0} onClick={this.onMenuClick}>
-            <MaterialIcon hasRipple icon='settings' />
-          </TopAppBarIcon>
-          <NavBarMenu coordinates={this.state.navBarMenuStates.coordinates} open={this.state.navBarMenuStates.open} onClose={() => this.onMenuClose()} />
+          <ButtonWithMenu ButtonClass={TopAppBarIcon}>
+
+          </ButtonWithMenu>
         </TopAppBarSection>
       </TopAppBarRow>
     </TopAppBar>
