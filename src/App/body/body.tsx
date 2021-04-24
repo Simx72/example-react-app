@@ -1,4 +1,5 @@
-import Card, { CardActionButtons, CardActionIcons, CardActions, CardMedia, CardPrimaryContent } from '@material/react-card';
+import Card, { CardActionIcons, CardActions, CardMedia, CardPrimaryContent } from '@material/react-card';
+import MaterialIcon from '@material/react-material-icon';
 import * as Chart from 'react-chartjs-2';
 
 const AppBody = () => (
@@ -10,12 +11,11 @@ const AppBody = () => (
       </CardPrimaryContent>
 
       <CardActions>
-        <CardActionButtons>
-          <button>Click Me</button>
-        </CardActionButtons>
-
         <CardActionIcons>
-          <i>Click Me Too!</i>
+          <MaterialIcon icon='delete' />
+        </CardActionIcons>
+        <CardActionIcons>
+          <MaterialIcon icon='more' />
         </CardActionIcons>
       </CardActions>
     </Card>
