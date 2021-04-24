@@ -59,7 +59,7 @@ class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates
           onClose={this.onClose}
         >
           <MenuList style={{ overflow: 'hidden' }} >
-            {this.props.options.map((option: any, index: any) => (
+            {this.props.options.map((option, index) => (
               <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
                 <MenuListItemText primaryText={option.props.text} />
                 {(() => {
