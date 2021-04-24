@@ -1,4 +1,4 @@
-import Card, { CardMedia, CardPrimaryContent } from '@material/react-card';
+import Card, { CardPrimaryContent } from '@material/react-card';
 import { Row, Col } from 'react-grid-system';
 import * as Chart from 'react-chartjs-2';
 
@@ -8,7 +8,6 @@ const AppBody = () => (
       <Col>
         <Card>
           <CardPrimaryContent>
-            <CardMedia square >
               <Chart.Bar
                 type="bar"
                 data={{
@@ -29,7 +28,6 @@ const AppBody = () => (
                   }
                 }}
               />
-            </CardMedia>
           </CardPrimaryContent>
         </Card>
       </Col>
