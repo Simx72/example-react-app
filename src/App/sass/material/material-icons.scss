@@ -1,7 +1,16 @@
 @import 'material-design-icons/iconfont/material-icons';
 @import '/node_modules/material-icons/iconfont/material-icons';
 @import '@material/react-material-icon/index.scss';
+@import '../mis-variables';
 .material-icons {
+    @each $n in 'primary',
+    'complementary' {
+        @for $d from 1 through 9 {
+            .color-#{$n}-#{$d * 100} {
+                color: $color-#{$n}-#{$d};
+            }
+        }
+    }
     /* Rules for sizing the icon. */
     .md-18 {
         font-size: 18px;
