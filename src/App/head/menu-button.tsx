@@ -3,21 +3,16 @@ import Menu, { MenuList, MenuListItem, MenuListItemGraphic, MenuListItemText } f
 import { TopAppBarIcon } from "@material/react-top-app-bar";
 import { Component, MouseEvent as ReactMouseEvent } from 'react';
 
-interface MenuOptionInterface {
-  text: string
-  icon: string
-}
-
-let MenuOption = (props: MenuOptionInterface): MenuOptionInterface => (
-  {
-    text: props.text,
-    icon: props.icon
-  }
+let MenuOption = (props: { text: string, icon: string, key: string | number }) => (
+  <MenuListItem key={props.key} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
+    <MenuListItemText primaryText={props.text} />
+    <MenuListItemGraphic graphic={<MaterialIcon icon={props.icon} />} />
+  </MenuListItem>
 )
 
 interface ButtonWithMenuProps {
   ButtonClass: (typeof TopAppBarIcon)
-  children: MenuOptionInterface[]
+  children: typeof MenuOption[]
   onSelect?: (index: number, item: Element) => void
 }
 interface ButtonWithMenuStates {
@@ -65,18 +60,11 @@ class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates
           onSelected={this.onSelected}
           onClose={this.onClose}
         >
-          <MenuList style={{ overflow: 'hidden' }}>
-            {this.props.children.map((option, index) => (
-              <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
-                <MenuListItemText primaryText={option.text} />
-                <MenuListItemGraphic graphic={<MaterialIcon icon={option.icon} />} />
-              </MenuListItem>
-            ))}
-          </MenuList>
+          <MenuList style={{ overflow: 'hidden' }} children={this.props.children} />
         </Menu>
       </>
     )
   }
 }
 
-export { MenuOption, ButtonWithMenu }
+export {MenuOption, ButtonWithMenu}
