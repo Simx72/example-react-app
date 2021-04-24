@@ -42,7 +42,7 @@ export function MenuItem(props: any) {
 
 interface ButtonWithMenuProps {
   ButtonClass: (typeof TopAppBarIcon)
-  options?: MenuOption[]
+  children: MenuOption[]
   onSelect?: (index: number, item: Element) => void
 }
 interface ButtonWithMenuStates {
@@ -84,7 +84,7 @@ export class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMen
           onClose={this.onClose}
         >
           <MenuList style={{ overflow: 'hidden' }}>
-            {this.props.options?.map((option, index) => (
+            {this.props.children?.map((option, index) => (
               <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
                 <MenuListItemText primaryText={option.text} />
                 <MenuListItemGraphic graphic={<MaterialIcon icon={option.icon} />} />
