@@ -3,10 +3,14 @@ import Menu, { MenuList, MenuListItem, MenuListItemGraphic, MenuListItemText } f
 import { TopAppBarIcon } from "@material/react-top-app-bar";
 import { Component, MouseEvent as ReactMouseEvent } from 'react';
 
-let MenuOption = (props: { text: string, icon: string, key: string | number }) => (
+let MenuOption = (props: { text: string, icon?: string, key?: string | number }) => (
   <MenuListItem key={props.key} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
     <MenuListItemText primaryText={props.text} />
-    <MenuListItemGraphic graphic={<MaterialIcon icon={props.icon} />} />
+    {(() => {
+      if (typeof props.icon != 'undefined') return (
+        <MenuListItemGraphic graphic={<MaterialIcon icon={props.icon} />} />
+      )
+    })()}
   </MenuListItem>
 )
 
@@ -67,4 +71,4 @@ class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates
   }
 }
 
-export {MenuOption, ButtonWithMenu}
+export { MenuOption, ButtonWithMenu }
