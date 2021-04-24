@@ -62,7 +62,7 @@ const Chart2 = () => {
 
   let stockMarketData: { date: Date, open: number, high: number, low: number, close: number, volume: number }[] = []
   if (data.data != null) {
-    
+
     let meta = data.data["Meta Data"] as { [c: string]: string }
     stockMetaData.information = meta["1. Information"]
     stockMetaData.symbol = meta["2. Symbol"]
@@ -98,7 +98,7 @@ const Chart2 = () => {
             type="line"
 
             data={{
-              labels: stockMarketData.map(val => val.date.getFullYear() + ' - ' + val.date.getMonth()),
+              labels: stockMarketData.map(val => val.date.getFullYear() + ' - ' + val.date.getMonth() + ' - ' + val.date.getDay),
               datasets: [{
                 data: stockMarketData.map(val => val.open),
                 label: "Open",
