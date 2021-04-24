@@ -5,7 +5,7 @@ const AppBody = () => (
   <div id="App-body" className="l-wrap">
     <Card>
       <CardPrimaryContent>
-        <CardMedia square >
+        <CardMedia >
           <Chart.Bar
             type="bar"
             data={{
