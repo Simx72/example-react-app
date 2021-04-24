@@ -26,7 +26,7 @@ class AppHeader extends Component<AppHeaderProps, AppHeaderStates> {
         </TopAppBarSection>
         <TopAppBarSection align='end' role='toolbar'>
           <ButtonWithMenu 
-            ButtonClass={TopAppBarIcon}
+            ButtonClass='top-app-bar-icon'
             options={[
               {
                 text: 'Opción 1',
