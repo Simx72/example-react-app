@@ -78,7 +78,7 @@ class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates
             {(() => {
               let options = this.props.children
               if (options instanceof Array) {
-                return options.map((option, index) => (
+                return options.map((option: any, index: any) => (
                   <MenuListItem key={index} style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
                     <MenuListItemText primaryText={option.props.text} />
                     {(() => {
