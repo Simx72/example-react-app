@@ -2,7 +2,7 @@ import Card, { CardPrimaryContent, CardActions, CardActionIcons } from '@materia
 import * as Chart from 'react-chartjs-2';
 import MaterialIcon from '@material/react-material-icon';
 
-const Card1 = () => (
+const Chart1 = () => (
   <div id="App-body">
     <Card>
       <CardPrimaryContent style={{ padding: '1rem' }} >
@@ -39,4 +39,4 @@ const Card1 = () => (
 )
 
 
-export { Card1 }
+export { Chart1 }
