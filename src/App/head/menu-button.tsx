@@ -11,11 +11,12 @@ menuOptions = [
   { text: 'Paste', icon: 'favorite' },
 ];
 
-const NavBarMenu = (props: {open: boolean, coordinates: { x: number, y: number }, onSelect?: (index: number, item: Element) => void}) => (
+const NavBarMenu = (props: {open: boolean, coordinates: { x: number, y: number }, onClose?: () => void, onSelect?: (index: number, item: Element) => void}) => (
   <Menu
     open={props.open}
     coordinates={props.coordinates}
     onSelected={props.onSelect}
+    onClose={props.onClose}
   >
     <MenuList>
       {menuOptions.map((option, index) => (
