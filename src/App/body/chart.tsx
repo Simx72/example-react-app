@@ -44,6 +44,26 @@ const Chart2 = () => {
 
   let data = useGet('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=demo')
 
+  let stockMetaData: {
+    "information": string
+    "symbol": string
+    "lastRefreshed": string
+    "outputSize": string
+    "timeZone": string
+  } = {
+    information: '',
+    symbol: '',
+    lastRefreshed: '',
+    outputSize: '',
+    timeZone: ''
+  };
+  if ("Meta Data" in data) {
+    if (data["Meta Data"] != null) {
+      let meta = data["Meta Data"] as { [c: string]: string }
+      stockMetaData.information = meta["1. Information"]
+    }
+  }
+
   let stockMarketData: { date: Date, open: number, high: number, low: number, close: number, volume: number }[] = []
   if (data.data != null) {
 
@@ -69,13 +89,13 @@ const Chart2 = () => {
     <div id="App-body">
       <Card>
         <CardPrimaryContent style={{ padding: '1rem' }} >
-          <h2>[{data.data["2. Symbol"]}]&nbsp;{ data.data["1. Information"] }</h2>
-          <h5>Last refreshed { data.data["3. Last Refreshed"] }</h5>
+          <h2>[{data.data["2. Symbol"]}]&nbsp;{data.data["1. Information"]}</h2>
+          <h5>Last refreshed {data.data["3. Last Refreshed"]}</h5>
           <Chart.Line
             type="line"
 
             data={{
-              labels: stockMarketData.map(val => val.date.getFullYear()+' - '+val.date.getMonth()),
+              labels: stockMarketData.map(val => val.date.getFullYear() + ' - ' + val.date.getMonth()),
               datasets: [{
                 data: stockMarketData.map(val => val.open),
                 label: "Open",
