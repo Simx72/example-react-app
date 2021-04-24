@@ -63,8 +63,9 @@ const Chart2 = () => {
         low
       })
     }
-    console.log(stockMarketData)
   }
+
+  // stockMarketData.filter(val => val.date.getDay() === 1)
 
   return (
     <div id="App-body">
@@ -74,9 +75,9 @@ const Chart2 = () => {
             type="line"
 
             data={{
-              labels: [1500, 1600, 1700, 1750, 1800, 1850, 1900, 1950, 1999, 2050],
+              labels: stockMarketData.map(val => val.date.getFullYear()+' - '+val.date.getMonth()),
               datasets: [{
-                data: [86, 114, 106, 106, 107, 111, 133, 221, 783, 2478],
+                data: stockMarketData.map(val => val.),
                 label: "Africa",
                 borderColor: "#3e95cd",
                 fill: false
@@ -120,4 +121,4 @@ const Chart2 = () => {
 
 
 
-export { Chart1, Chart2 }
+export { Chart1, Chart2 };

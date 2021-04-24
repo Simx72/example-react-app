@@ -3,22 +3,15 @@ import { useGet } from 'restful-react';
 import { Chart2 } from './chart';
 
 const AppBody = () => {
-
-  let data = useGet('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=demo')
-
   return (
     <div id="App-body">
       <Grid>
         <Row>
-          {/* <Cell columns={6}>
-            <Chart1 />
-          </Cell> */}
           <Cell columns={12}>
             <Chart2 />
           </Cell>
         </Row>
       </Grid>
-      <div>{JSON.stringify(data.data)}</div>
     </div>
   )
 }
