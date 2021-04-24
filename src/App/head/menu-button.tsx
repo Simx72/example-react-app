@@ -1,10 +1,11 @@
 import MaterialIcon from "@material/react-material-icon";
 import Menu, { MenuList, MenuListItem, MenuListItemGraphic, MenuListItemText } from "@material/react-menu";
 import { TopAppBarIcon } from "@material/react-top-app-bar";
-import { Component } from "react";
+import { Component, MouseEvent as ReactMouseEvent } from 'react';
 
+type MenuOptions = { text: string; icon: string }[];
 
-let menuOptions: { text: string; icon: string }[];
+let menuOptions: MenuOptions;
 menuOptions = [
   { text: 'Un texto bien largoooo', icon: 'favorite' },
   { text: 'Edit', icon: 'favorite' },
@@ -37,6 +38,7 @@ export function MenuItem(props: any) {
 }
 
 interface ButtonWithMenuProps {
+  ButtonClass: (typeof TopAppBarIcon)
   onSelect?: (index: number, item: Element) => void
 }
 interface ButtonWithMenuStates {
@@ -48,17 +50,29 @@ interface ButtonWithMenuStates {
 }
 
 export class ButtonWithMenu extends Component<ButtonWithMenuProps, ButtonWithMenuStates> {
-  
-  onClick = () => {}
-  onClose = () => {}
-  onSelected = () => {}
-  
+
+  onClick = (ev: ReactMouseEvent<HTMLElement, MouseEvent>) => {
+    this.setState({
+      open: !this.state.open,
+      coordinates: {
+        x: ev.clientX,
+        y: ev.clientY
+      }
+    })
+  }
+  onClose = () => {
+    this.setState({
+      open: false
+    })
+  }
+  onSelected = this.props.onSelect
+
   render() {
     return (
       <>
-        <TopAppBarIcon actionItem tabIndex={0} onClick={this.onClick}>
+        <this.props.ButtonClass tabIndex={0} onClick={this.onClick}>
           <MaterialIcon hasRipple icon='settings' />
-        </TopAppBarIcon>
+        </this.props.ButtonClass>
         <Menu
           open={this.state.open}
           coordinates={this.state.coordinates}
