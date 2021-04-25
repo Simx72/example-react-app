@@ -1,5 +1,5 @@
 import { Cell, Row, Grid } from '@material/react-layout-grid'
-import Card from '@material/react-card';
+import Card, { CardPrimaryContent } from '@material/react-card';
 import { EightColumn, FourColumn, TwelveColumn } from '@material/react-layout-grid/dist/Cell'
 import * as Txt from '@material/react-typography'
 
@@ -32,7 +32,9 @@ const Home = () => {
           {lista.map(val => (
             <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >
               <Card>
-              {val}
+                <CardPrimaryContent>
+                  {val}
+                </CardPrimaryContent>
               </Card>
             </Cell>
           ))}
