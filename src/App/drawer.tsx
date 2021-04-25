@@ -7,6 +7,7 @@ import { AppBody } from "./body/body";
 import { AppHeader } from "./head/header";
 import appInfo from '../app-info.json';
 import { Container } from "react-grid-system";
+import { goTo } from "./functions/url";
 
 interface AppDrawerProps { }
 interface AppDrawerStates {
@@ -54,12 +55,7 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
     if (typeof elt != 'undefined') {
       let href = elt.getAttribute('href')
       if (href != null) {
-        if (typeof window.history.pushState != 'undefined') {
-          window.history.pushState({ href }, 'Inicio', href)
-          this.selectIndex()
-        } else {
-          window.location.assign(href)
-        }
+        goTo(href).then(() => this.selectIndex())
       }
     }
   }
