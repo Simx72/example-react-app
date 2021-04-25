@@ -1,7 +1,8 @@
 import Card, { CardPrimaryContent, CardActions, CardActionIcons } from '@material/react-card';
 import * as Chart from 'react-chartjs-2';
-import { MaterialIconSharp as MDI } from '../material-icon';
+// import { MaterialIconSharp as MDI } from '../material-icon';
 import { useGet } from 'restful-react';
+import MDI from '@material/react-material-icon';
 
 const Chart1 = () => (
   <div id="App-body">
