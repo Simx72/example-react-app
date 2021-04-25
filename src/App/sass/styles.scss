@@ -22,8 +22,11 @@ body {
     @extend %no-padding;
 }
 
-.subir:hover {
-    box-shadow: -3px -1px 3px rgba($color: #000000, $alpha: .4);
+.subir {
+    transition-duration: 500ms;
+     :hover {
+        box-shadow: -1px 3px 3px rgba($color: #000000, $alpha: .4);
+    }
 }
 
 .material-icon,
