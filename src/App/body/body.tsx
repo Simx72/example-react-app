@@ -26,7 +26,6 @@ const AppBody = (props: { index: number }) => {
                 <MDI icon='home' />
               </div>
             )
-            break;
         }
       })}
     </div>
