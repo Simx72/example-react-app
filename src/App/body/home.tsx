@@ -44,7 +44,7 @@ const Home = () => {
                 {val}
                 <CardActions>
                   <CardActionIcons>
-                    {<MDI icon='run' cardAction />}
+                    {<MDI icon='favorite' cardAction />}
                   </CardActionIcons>
                 </CardActions>
               </Card>
