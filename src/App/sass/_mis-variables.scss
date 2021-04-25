@@ -95,7 +95,7 @@ sans-serif !important;
         .color-#{$name}-#{$dark*100} {
             color: my-color($name, $dark * 100);
         }
-        .color-#{$name}-#{$dark*100} {
+        .color-#{$name}-#{$dark*100}-important {
             color: my-color($name, $dark * 100) !important;
         }
     }
