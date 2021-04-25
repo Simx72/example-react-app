@@ -21,3 +21,11 @@ html {
 body {
     @extend %no-padding;
 }
+
+.material-icon,
+.material-icon-outlined,
+.material-icon-sharp,
+.material-icon-round,
+.material-icon-two-tone {
+    color: inherit
+}
