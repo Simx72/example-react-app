@@ -7,6 +7,8 @@ import { AppBody } from "./body/body";
 import { AppHeader } from "./head/header";
 import appInfo from '../app-info.json';
 import { goTo } from "./functions/url";
+import { Cell, Grid } from "@material/react-layout-grid";
+import Row from "@material/react-top-app-bar/dist/Row";
 
 interface AppDrawerProps { }
 interface AppDrawerStates {
@@ -96,7 +98,13 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
         <DrawerAppContent className='drawer-app-content'>
           <AppHeader titulo={appInfo.name} onMenuClick={() => this.toggleOpen()} />
           <TopAppBarFixedAdjust>
-              <AppBody index={this.state.selectedIndex} />
+            <Grid>
+              <Row style={{ justifyContent: 'center' }}>
+                <Cell desktopColumns={10} tabletColumns={7} phoneColumns={4} >
+                  <AppBody index={this.state.selectedIndex} />
+                </Cell>
+              </Row>
+            </Grid>
           </TopAppBarFixedAdjust>
         </DrawerAppContent>
       </div>
