@@ -89,8 +89,7 @@ const Chart2 = () => {
 
   return (
     <div id="App-body">
-      <Card>
-        <CardPrimaryContent style={{ padding: '1rem' }} >
+      <Card style={{ padding: '1rem' }} >
           <h2>[{stockMetaData.symbol}]&nbsp;{stockMetaData.information}</h2>
           <h5>Last refreshed {stockMetaData.lastRefreshed}</h5>
           <Chart.Line
@@ -123,7 +122,6 @@ const Chart2 = () => {
             }}
 
           />
-        </CardPrimaryContent>
         <CardActions>
           <CardActionIcons>
             <MDI cardAction icon='more_vert' />
