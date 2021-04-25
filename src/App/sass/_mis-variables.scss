@@ -82,16 +82,7 @@ sans-serif !important;
     }
 }
 
-:root {
-    @each $name in 'primary',
-    'complementary' {
-        --color-#{$name}-50: my-color($name, 50);
-        @for $dark from 1 through 9 {
-            --color-#{$name}-#{$dark*100}: my-color($name, $dark * 100);
-        }
-    }
-}
-
+;
 @each $name in 'primary',
 'complementary' {
     .color-#{$name}-50 {
