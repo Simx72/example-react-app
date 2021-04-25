@@ -5,19 +5,19 @@ const DefaultIcon = (props: { icon: string, className: string, hasRipple: boolea
     return (<span className={props.className} >{props.icon}</span>)
   }
 }
-const MaterialIcon = (props: { icon: string, hasRipple: boolean }) => (
+const MaterialIcon = (props: { icon: string, hasRipple: boolean = false }) => (
   <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons' />
 )
-const MaterialIconOutlined = (props: { icon: string, hasRipple: boolean }) => (
+const MaterialIconOutlined = (props: { icon: string, hasRipple: boolean = false }) => (
   <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-outlined' />
 )
-const MaterialIconRound = (props: { icon: string, hasRipple: boolean }) => (
+const MaterialIconRound = (props: { icon: string, hasRipple: boolean = false }) => (
   <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-round' />
 )
-const MaterialIconSharp = (props: { icon: string, hasRipple: boolean }) => (
+const MaterialIconSharp = (props: { icon: string, hasRipple: boolean = false }) => (
   <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-sharp' />
 )
-const MaterialIconTwoTone = (props: { icon: string, hasRipple: boolean }) => (
+const MaterialIconTwoTone = (props: { icon: string, hasRipple: boolean = false }) => (
   <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-two-tone' />
 )
 
