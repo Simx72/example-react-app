@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Chart1, Chart2 } from './chart';
+import { MaterialIconRound as MDI } from '../material-icon';
 
 const AppBody = () => {
   return (
@@ -13,7 +14,11 @@ const AppBody = () => {
             <Chart2 />
           </Route>
           <Route path="/">
-            <div></div>
+            <div>
+              <MDI icon='home' />
+              <span>Inicio</span>
+              <MDI icon='home' />
+            </div>
           </Route>
         </Switch>
       </BrowserRouter>
