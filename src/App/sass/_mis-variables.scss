@@ -88,9 +88,15 @@ sans-serif !important;
     .color-#{$name}-50 {
         color: my-color($name, 50);
     }
+    .color-#{$name}-50-important {
+        color: my-color($name, 50) !important;
+    }
     @for $dark from 1 through 9 {
         .color-#{$name}-#{$dark*100} {
             color: my-color($name, $dark * 100);
+        }
+        .color-#{$name}-#{$dark*100} {
+            color: my-color($name, $dark * 100) !important;
         }
     }
 }
