@@ -16,7 +16,9 @@ let largoDe: {
 
 const Home = () => {
 
-  let lista: string[] = ['\\(^v^)/'];
+  let lista: string[] = [
+    '\\(^v^)/'
+  ];
 
   return (
     <div>
