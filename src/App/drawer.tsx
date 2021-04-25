@@ -6,7 +6,6 @@ import { Component } from "react";
 import { AppBody } from "./body/body";
 import { AppHeader } from "./head/header";
 import appInfo from '../app-info.json';
-import { Container } from "react-grid-system";
 import { goTo } from "./functions/url";
 
 interface AppDrawerProps { }
@@ -97,9 +96,7 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
         <DrawerAppContent className='drawer-app-content'>
           <AppHeader titulo={appInfo.name} onMenuClick={() => this.toggleOpen()} />
           <TopAppBarFixedAdjust>
-            <Container style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
               <AppBody index={this.state.selectedIndex} />
-            </Container>
           </TopAppBarFixedAdjust>
         </DrawerAppContent>
       </div>
