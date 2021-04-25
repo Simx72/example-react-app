@@ -10,7 +10,7 @@ class Favorite extends Component {
       filled: !this.state.filled
     })
   }
-  render = () => (this.state.filled ? (<MaterialIconSharp icon='favorite' />) : (<MaterialIconOutlined icon='favorite' />))
+  render = () => (this.state.filled ? (<MaterialIconSharp onClick={() => this.change()} icon='favorite' />) : (<MaterialIconOutlined onClick={() => this.change()} icon='favorite' />))
 }
 
 export { Favorite }
