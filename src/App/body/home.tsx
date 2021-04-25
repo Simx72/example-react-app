@@ -1,8 +1,9 @@
-import * as Texto from '@material/react-typography'
+import * as Txt from '@material/react-typography'
 
 const Home = () => (
   <div className='color-complementary-900' style={{ textAlign: 'center' }} >
-    <Texto.Headline1>Home</Texto.Headline1>
+    <Txt.Headline1>Home</Txt.Headline1>
+    <Txt.Button>Click here!</Txt.Button>
   </div>
 )
 
