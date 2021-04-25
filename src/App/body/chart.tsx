@@ -31,9 +31,9 @@ const Chart1 = () => (
       </CardPrimaryContent>
       <CardActions>
         <CardActionIcons>
-          <MDI hasRipple icon='more_vert' />
-          <MDI hasRipple icon='more' />
-          <MDI hasRipple icon='favorite' />
+          <MDI icon='more_vert' />
+          <MDI icon='more' />
+          <MDI icon='favorite' />
         </CardActionIcons>
       </CardActions>
     </Card>
@@ -126,9 +126,9 @@ const Chart2 = () => {
         </CardPrimaryContent>
         <CardActions>
           <CardActionIcons>
-            <MDI hasRipple icon='more_vert' />
-            <MDI hasRipple icon='more' />
-            <MDI hasRipple icon='favorite' />
+            <MDI icon='more_vert' />
+            <MDI icon='more' />
+            <MDI icon='favorite' />
           </CardActionIcons>
         </CardActions>
       </Card>
