@@ -1,5 +1,5 @@
 import { Chart1, Chart2 } from './chart';
-import { MaterialIconTwoTone as MDI } from '../material-icon';
+import { Home } from './home';
 
 const AppBody = (props: { index: number }) => {
   let elt: JSX.Element;
@@ -11,13 +11,7 @@ const AppBody = (props: { index: number }) => {
       elt = (<Chart1 />)
       break
     default:
-      elt = (
-        <div>
-          <MDI icon='home' />
-          <span>Inicio</span>
-          <MDI icon='home' />
-        </div>
-      )
+      elt = (<Home />)
       break
   }
 
