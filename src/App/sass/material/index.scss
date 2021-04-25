@@ -9,6 +9,7 @@ $mdc-typography-font-family: $default-font;
 @import '@material/react-card/index.scss';
 @import '@material/react-layout-grid/index.scss';
 @import './material-icons.scss';
+@import './drawer.scss';
 .mdc-top-app-bar {
     @include mdc-top-app-bar-fill-color-accessible(my-color());
 }
