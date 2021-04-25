@@ -7,8 +7,7 @@ import { AppBody } from "./body/body";
 import { AppHeader } from "./head/header";
 import appInfo from '../app-info.json';
 import { goTo } from "./functions/url";
-import { Cell, Grid } from "@material/react-layout-grid";
-import Row from "@material/react-top-app-bar/dist/Row";
+import { Cell, Row, Grid } from "@material/react-layout-grid";
 
 interface AppDrawerProps { }
 interface AppDrawerStates {
