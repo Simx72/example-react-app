@@ -3,6 +3,7 @@ import Card, { CardActions, CardActionIcons } from '@material/react-card';
 import { EightColumn, FourColumn, TwelveColumn } from '@material/react-layout-grid/dist/Cell'
 import * as Txt from '@material/react-typography'
 import { MaterialIconRound as MDI } from '../material-icon';
+import { Favorite } from '../functions/favorite';
 
 let alignCenter: { textAlign: 'center' } = { textAlign: 'center' }
 let largoDe: {
@@ -44,7 +45,7 @@ const Home = () => {
                 {val}
                 <CardActions>
                   <CardActionIcons>
-                    {<MDI icon='favorite' className='color-primary-800-important' cardAction key={index} />}
+                    <Favorite/>
                   </CardActionIcons>
                 </CardActions>
               </Card>
