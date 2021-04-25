@@ -99,11 +99,11 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
           <TopAppBarFixedAdjust>
             <Grid>
               <Row>
-                <Cell desktopColumns={2} tabletColumns={2}></Cell>
+                <Cell desktopColumns={1} tabletColumns={1}></Cell>
                 <Cell desktopColumns={10} tabletColumns={6} phoneColumns={4} >
                   <AppBody index={this.state.selectedIndex} />
                 </Cell>
-                <Cell desktopColumns={2} tabletColumns={2}></Cell>
+                <Cell desktopColumns={1} tabletColumns={1}></Cell>
               </Row>
             </Grid>
           </TopAppBarFixedAdjust>
