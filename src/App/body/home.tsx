@@ -27,12 +27,7 @@ const Home = () => {
     'Item 6',
     'Item 7',
     'Item 8',
-    'Item 9',
-    'Item 10',
-    'Item 11',
-    'Item 12',
-    'Item 13',
-    'Item 14'
+    'Item 9'
   ];
 
   return (
