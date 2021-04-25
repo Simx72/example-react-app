@@ -14,26 +14,26 @@ let largoDe: {
 }
 
 
-const Home = () => (
-  <div className='color-complementary-900'>
-    <b>
-    <Txt.Headline1 style={alignCenter} >Home</Txt.Headline1>
-    </b>
-    <Txt.Headline2 style={alignCenter} >This is the main page of the project</Txt.Headline2>
-    <Grid>
-      <Row>
-        <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >\('v')/</Cell>
-        <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >\('v')/</Cell>
-        <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >\('v')/</Cell>
-        <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >\('v')/</Cell>
-        <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >\('v')/</Cell>
-        <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >\('v')/</Cell>
-        <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >\('v')/</Cell>
-        <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >\('v')/</Cell>
-        <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >\('v')/</Cell>
-      </Row>
-    </Grid>
-  </div>
-)
+const Home = () => {
+
+  let lista: string[] = ['\\(^v^)/'];
+
+  return (
+    <div>
+      <b className='color-complementary-900'>
+        <Txt.Headline1 style={alignCenter} >Home</Txt.Headline1>
+        <Txt.Headline2 style={alignCenter} >This is the main page of the project</Txt.Headline2>
+      </b>
+      <Grid>
+        <Row>
+          {lista.map(val => (
+            <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >{val}</Cell>
+          ))}
+        </Row>
+      </Grid>
+
+    </div>
+  )
+}
 
 export { Home }
