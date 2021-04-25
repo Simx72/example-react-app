@@ -1,24 +1,36 @@
-const DefaultIcon = (props: { icon: string, className: string, hasRipple?: boolean }) => {
-  if (props.hasRipple) {
-    return (<span className={'material-icons--ripple-surface ' + props.className} >{props.icon}</span>)
-  } else {
-    return (<span className={props.className} >{props.icon}</span>)
-  }
+interface IconProps {
+  icon: string;
+  hasRipple?: boolean;
+  cardAction?: boolean;
 }
-const MaterialIcon = (props: { icon: string, hasRipple?: boolean }) => (
-  <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons' />
+
+interface DefaultIconProps extends IconProps {
+  className: string
+}
+
+const DefaultIcon = (props: DefaultIconProps) => {
+
+  let finalClassname = props.className
+
+  if (props.hasRipple) finalClassname += ' material-icons--ripple-surface'
+  if (props.cardAction) finalClassname += ' mdc-card__action mdc-card__action--icon'
+
+  return (<span className={finalClassname} >{props.icon}</span>)
+}
+const MaterialIcon = (props: IconProps) => (
+  <DefaultIcon icon={props.icon} cardAction={props.cardAction} hasRipple={props.hasRipple} className='material-icons' />
 )
-const MaterialIconOutlined = (props: { icon: string, hasRipple?: boolean }) => (
-  <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-outlined' />
+const MaterialIconOutlined = (props: IconProps) => (
+  <DefaultIcon icon={props.icon} cardAction={props.cardAction} hasRipple={props.hasRipple} className='material-icons-outlined' />
 )
-const MaterialIconRound = (props: { icon: string, hasRipple?: boolean }) => (
-  <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-round' />
+const MaterialIconRound = (props: IconProps) => (
+  <DefaultIcon icon={props.icon} cardAction={props.cardAction} hasRipple={props.hasRipple} className='material-icons-round' />
 )
-const MaterialIconSharp = (props: { icon: string, hasRipple?: boolean }) => (
-  <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-sharp' />
+const MaterialIconSharp = (props: IconProps) => (
+  <DefaultIcon icon={props.icon} cardAction={props.cardAction} hasRipple={props.hasRipple} className='material-icons-sharp' />
 )
-const MaterialIconTwoTone = (props: { icon: string, hasRipple?: boolean }) => (
-  <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-two-tone' />
+const MaterialIconTwoTone = (props: IconProps) => (
+  <DefaultIcon icon={props.icon} cardAction={props.cardAction} hasRipple={props.hasRipple} className='material-icons-two-tone' />
 )
 
 export { MaterialIcon, MaterialIconOutlined, MaterialIconRound, MaterialIconSharp, MaterialIconTwoTone }
