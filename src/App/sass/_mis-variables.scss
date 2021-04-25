@@ -87,7 +87,7 @@ sans-serif !important;
     'complementary' {
         --color-#{$name}-50: my-color($name, 50);
         @for $dark from 1 through 9 {
-            --color-#{$name}-#{$dark}: my-color($name, $dark * 100);
+            --color-#{$name}-#{$dark*100}: my-color($name, $dark * 100);
         }
     }
 }
@@ -98,7 +98,7 @@ sans-serif !important;
         color: my-color($name, 50);
     }
     @for $dark from 1 through 9 {
-        .color-#{$name}-#{$dark} {
+        .color-#{$name}-#{$dark*100} {
             color: my-color($name, $dark * 100);
         }
     }
