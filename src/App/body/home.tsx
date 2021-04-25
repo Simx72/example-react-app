@@ -38,13 +38,13 @@ const Home = () => {
       </b>
       <Grid>
         <Row>
-          {lista.map(val => (
+          {lista.map((val, index) => (
             <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >
               <Card style={{padding: '1rem'}}>
                 {val}
                 <CardActions>
                   <CardActionIcons>
-                    {<MDI icon='favorite' cardAction />}
+                    {<MDI icon='favorite' cardAction key={index} />}
                   </CardActionIcons>
                 </CardActions>
               </Card>
