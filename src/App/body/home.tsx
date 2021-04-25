@@ -40,7 +40,7 @@ const Home = () => {
         <Row>
           {lista.map((val, index) => (
             <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >
-              <Card style={{padding: '1rem'}}>
+              <Card className="subir" style={{padding: '1rem'}}>
                 {val}
                 <CardActions>
                   <CardActionIcons>
