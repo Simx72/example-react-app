@@ -32,7 +32,7 @@ const Home = () => {
     'Item 11',
     'Item 12',
     'Item 13',
-    'Item 14',
+    'Item 14'
   ];
 
   return (
