@@ -92,3 +92,15 @@ sans-serif !important;
         }
     }
 }
+
+@each $name in 'primary',
+'complementary' {
+    .color-#{$name}-50 {
+        color: my-color($name, 50);
+    }
+    @for $dark from 1 through 9 {
+        .color-#{$name}-#{$dark} {
+            color: my-color($name, $dark * 100);
+        }
+    }
+}
