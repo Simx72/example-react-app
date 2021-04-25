@@ -102,7 +102,7 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
           <AppHeader titulo={appInfo.name} onMenuClick={() => this.toggleOpen()} />
           <TopAppBarFixedAdjust>
             <Container style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
-              <AppBody />
+              <AppBody index={this.state.selectedIndex} />
             </Container>
           </TopAppBarFixedAdjust>
         </DrawerAppContent>
