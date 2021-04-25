@@ -36,7 +36,7 @@ const Home = () => {
                 {val}
                 <CardActions>
                   <CardActionIcons>
-                    {<MDI icon='3d' cardAction />}
+                    {<MDI icon='camera' cardAction />}
                   </CardActionIcons>
                 </CardActions>
               </Card>
