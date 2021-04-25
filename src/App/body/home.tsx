@@ -29,7 +29,9 @@ const Home = () => {
       <Grid>
         <Row>
           {lista.map(val => (
-            <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >{val}</Cell>
+            <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >
+              {val}
+            </Cell>
           ))}
         </Row>
       </Grid>
