@@ -1,16 +1,16 @@
-import { Grid, Row, Cell } from '@material/react-layout-grid';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Chart2 } from './chart';
 
 const AppBody = () => {
   return (
     <div id="App-body">
-      <Grid>
-        <Row>
-          <Cell columns={12}>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/ibm-stock-market">
             <Chart2 />
-          </Cell>
-        </Row>
-      </Grid>
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   )
 }
