@@ -34,9 +34,14 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
           selectedIndex: 0
         })
         break;
-      case '/otro':
+      case '/ibm-stock-market':
         this.setState({
           selectedIndex: 1
+        })
+        break;
+      case '/population':
+        this.setState({
+          selectedIndex: 2
         })
         break;
 
