@@ -8,16 +8,16 @@ const DefaultIcon = (props: { icon: string, className: string, hasRipple: boolea
 const MaterialIcon = (props: { icon: string, hasRipple: boolean }) => (
   <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons' />
 )
-const MaterialIconOutlined = (props: { icon: string }) => (
+const MaterialIconOutlined = (props: { icon: string, hasRipple: boolean }) => (
   <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-outlined' />
 )
-const MaterialIconRound = (props: { icon: string }) => (
+const MaterialIconRound = (props: { icon: string, hasRipple: boolean }) => (
   <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-round' />
 )
-const MaterialIconSharp = (props: { icon: string }) => (
+const MaterialIconSharp = (props: { icon: string, hasRipple: boolean }) => (
   <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-sharp' />
 )
-const MaterialIconTwoTone = (props: { icon: string }) => (
+const MaterialIconTwoTone = (props: { icon: string, hasRipple: boolean }) => (
   <DefaultIcon icon={props.icon} hasRipple={props.hasRipple} className='material-icons-two-tone' />
 )
 
