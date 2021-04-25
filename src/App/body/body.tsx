@@ -9,6 +9,9 @@ const AppBody = () => {
           <Route path="/ibm-stock-market">
             <Chart2 />
           </Route>
+          <Route path="/">
+            <div></div>
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>
