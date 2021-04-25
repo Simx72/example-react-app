@@ -1,6 +1,6 @@
 import Card, { CardPrimaryContent, CardActions, CardActionIcons } from '@material/react-card';
 import * as Chart from 'react-chartjs-2';
-import MaterialIcon from '@material/react-material-icon';
+import { MaterialIconSharp as MDI } from '../material-icon';
 import { useGet } from 'restful-react';
 
 const Chart1 = () => (
@@ -31,9 +31,9 @@ const Chart1 = () => (
       </CardPrimaryContent>
       <CardActions>
         <CardActionIcons>
-          <MaterialIcon icon='more_vert' />
-          <MaterialIcon icon='more' />
-          <MaterialIcon icon='favorite' />
+          <MDI hasRipple icon='more_vert' />
+          <MDI hasRipple icon='more' />
+          <MDI hasRipple icon='favorite' />
         </CardActionIcons>
       </CardActions>
     </Card>
@@ -126,9 +126,9 @@ const Chart2 = () => {
         </CardPrimaryContent>
         <CardActions>
           <CardActionIcons>
-            <MaterialIcon icon='more_vert' />
-            <MaterialIcon icon='more' />
-            <MaterialIcon icon='favorite' />
+            <MDI hasRipple icon='more_vert' />
+            <MDI hasRipple icon='more' />
+            <MDI hasRipple icon='favorite' />
           </CardActionIcons>
         </CardActions>
       </Card>
