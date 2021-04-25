@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { MaterialIconOutlined, MaterialIconSharp } from "../material-icon";
 
-class Favorite extends Component<{ onChange: (value: boolean) => any, cardAction?: boolean }, { filled: boolean }> {
+class Favorite extends Component<{ onChange?: (value: boolean) => any, cardAction?: boolean }, { filled: boolean }> {
   state = {
     filled: false
   }
@@ -9,7 +9,9 @@ class Favorite extends Component<{ onChange: (value: boolean) => any, cardAction
     this.setState({
       filled: !this.state.filled
     })
-    this.props.onChange(this.state.filled)
+    if (typeof this.props.onChange != 'undefined') {
+      this.props.onChange(this.state.filled)
+    }
   }
   render = () => (this.state.filled ? (<MaterialIconSharp cardAction={this.props.cardAction} onClick={() => this.change()} icon='favorite' />) : (<MaterialIconOutlined cardAction={this.props.cardAction} onClick={() => this.change()} icon='favorite' />))
 }
