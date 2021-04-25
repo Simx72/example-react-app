@@ -3,17 +3,6 @@
 @import '@material/react-material-icon/index.scss';
 @import '../mis-variables';
 .material-icons {
-    @each $name in 'primary',
-    'complementary' {
-        .#{$name}-50 {
-            color: my-color($name, 50);
-        }
-        @for $dark from 1 through 9 {
-            .#{$name}-#{$dark*100} {
-                color: my-color($name, $dark * 100);
-            }
-        }
-    }
     /* Rules for sizing the icon. */
     .md-18 {
         font-size: 18px;
