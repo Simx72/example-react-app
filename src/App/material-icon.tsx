@@ -11,7 +11,7 @@ interface DefaultIconProps extends IconProps {
 
 const DefaultIcon = (props: DefaultIconProps) => {
 
-  let finalClassname = props.className
+  let finalClassname = props.iconClass
 
   if (props.hasRipple) finalClassname += ' material-icons--ripple-surface'
   if (props.cardAction) finalClassname += ' mdc-card__action mdc-card__action--icon'
