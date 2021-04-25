@@ -4,7 +4,7 @@ Helvetica,
 sans-serif !important;
 @function my-color($n: 'primary', $d: 'default') {
     @if $n=='primary'OR $n=='complementary' {
-        @if $n='primary' {
+        @if $n=='primary' {
             @if $d==50 {
                 @return #e2f2fb;
             }
@@ -39,7 +39,7 @@ sans-serif !important;
                 @return #5bb3ee;
             }
         }
-        @if $n='complementary' {
+        @if $n=='complementary' {
             @if $d==50 {
                 @return #fffeed;
             }
