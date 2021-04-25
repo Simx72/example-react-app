@@ -1,8 +1,10 @@
+import React from 'react';
 interface IconProps {
   icon: string;
   hasRipple?: boolean;
   cardAction?: boolean;
   className?: string;
+  onClick?: (ev: React.MouseEvent) => void
 }
 
 interface DefaultIconProps extends IconProps {
@@ -17,7 +19,7 @@ const DefaultIcon = (props: DefaultIconProps) => {
   if (props.cardAction) finalClassname += ' mdc-card__action mdc-card__action--icon'
   if (typeof props.className !== 'undefined') finalClassname += ' '+props.className.trim()
 
-  return (<span className={finalClassname} >{props.icon}</span>)
+  return (<span className={finalClassname} onClick={props.onClick} >{props.icon}</span>)
 }
 const MaterialIcon = (props: IconProps) => (
   <DefaultIcon iconClass='material-icons' {...props} />
