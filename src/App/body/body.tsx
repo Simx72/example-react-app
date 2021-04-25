@@ -17,7 +17,7 @@ const AppBody = (props: { index: number }) => {
           case 1:
             return (<Chart2 />)
           case 2:
-            return (<Chart2 />)
+            return (<Chart1 />)
           default:
             return (
               <div>
