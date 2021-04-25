@@ -6,6 +6,7 @@ import { useGet } from 'restful-react';
 const Chart1 = () => (
   <div id="App-body">
     <Card>
+      <h1>Population in different continents</h1>
       <CardPrimaryContent style={{ padding: '1rem' }} >
         <Chart.Bar
           type="bar"
