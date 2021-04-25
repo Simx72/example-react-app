@@ -1,4 +1,5 @@
-import { MaterialIconTwoTone as MDI } from '../material-icon';
+// import { MaterialIconTwoTone  } from '../material-icon';
+import MDI from "@material/react-material-icon"
 
 const Home = () => (
   <div className='color-complementary-900' style={{ textAlign: 'center' }} >
