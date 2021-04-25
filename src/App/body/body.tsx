@@ -1,27 +1,34 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Chart1, Chart2 } from './chart';
 import { MaterialIconTwoTone as MDI } from '../material-icon';
 
-const AppBody = () => {
+const AppBody = (props: { index: number }) => {
   return (
     <div id="App-body">
-      <BrowserRouter>
-        <Switch>
-          <Route path="/population">
-            <Chart1 />
-          </Route>
-          <Route path="/ibm-stock-market">
-            <Chart2 />
-          </Route>
-          <Route path="/">
-            <div>
-              <MDI icon='home' />
-              <span>Inicio</span>
-              <MDI icon='home' />
-            </div>
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      {(() => {
+        switch (props.index) {
+          case 0:
+            return (
+              <div>
+                <MDI icon='home' />
+                <span>Inicio</span>
+                <MDI icon='home' />
+              </div>
+            )
+          case 1:
+            return (<Chart2 />)
+          case 2:
+            return (<Chart2 />)
+          default:
+            return (
+              <div>
+                <MDI icon='home' />
+                <span>Inicio</span>
+                <MDI icon='home' />
+              </div>
+            )
+            break;
+        }
+      })}
     </div>
   )
 }
