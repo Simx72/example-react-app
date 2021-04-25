@@ -1,7 +1,7 @@
 import { MaterialIconTwoTone as MDI } from '../material-icon';
 
 const Home = () => (
-  <div className='color-complementary-500' style={{ textAlign: 'center' }} >
+  <div className='color-complementary-900' style={{ textAlign: 'center' }} >
     <MDI icon='home' />
     <span>Inicio</span>
     <MDI icon='home' />
