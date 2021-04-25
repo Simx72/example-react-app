@@ -20,19 +20,19 @@ const DefaultIcon = (props: DefaultIconProps) => {
   return (<span className={finalClassname} >{props.icon}</span>)
 }
 const MaterialIcon = (props: IconProps) => (
-  <DefaultIcon icon={props.icon} cardAction={props.cardAction} hasRipple={props.hasRipple} iconClass='material-icons' />
+  <DefaultIcon iconClass='material-icons' {...props} />
 )
 const MaterialIconOutlined = (props: IconProps) => (
-  <DefaultIcon icon={props.icon} cardAction={props.cardAction} hasRipple={props.hasRipple} iconClass='material-icons-outlined' />
+  <DefaultIcon iconClass='material-icons-outlined' {...props} />
 )
 const MaterialIconRound = (props: IconProps) => (
-  <DefaultIcon icon={props.icon} cardAction={props.cardAction} hasRipple={props.hasRipple} iconClass='material-icons-round' />
+  <DefaultIcon iconClass='material-icons-round' {...props} />
 )
 const MaterialIconSharp = (props: IconProps) => (
-  <DefaultIcon icon={props.icon} cardAction={props.cardAction} hasRipple={props.hasRipple} iconClass='material-icons-sharp' />
+  <DefaultIcon iconClass='material-icons-sharp' {...props} />
 )
 const MaterialIconTwoTone = (props: IconProps) => (
-  <DefaultIcon icon={props.icon} cardAction={props.cardAction} hasRipple={props.hasRipple} iconClass='material-icons-two-tone' />
+  <DefaultIcon iconClass='material-icons-two-tone' {...props} />
 )
 
 export { MaterialIcon, MaterialIconOutlined, MaterialIconRound, MaterialIconSharp, MaterialIconTwoTone }
