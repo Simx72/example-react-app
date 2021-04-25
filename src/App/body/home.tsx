@@ -2,7 +2,7 @@ import { Cell, Row, Grid } from '@material/react-layout-grid'
 import Card, { CardActions, CardActionIcons } from '@material/react-card';
 import { EightColumn, FourColumn, TwelveColumn } from '@material/react-layout-grid/dist/Cell'
 import * as Txt from '@material/react-typography'
-import { MaterialIconOutlined as MDI } from '../material-icon';
+import { MaterialIconRound as MDI } from '../material-icon';
 
 let alignCenter: { textAlign: 'center' } = { textAlign: 'center' }
 let largoDe: {
