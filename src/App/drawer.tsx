@@ -1,6 +1,6 @@
 import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader, DrawerSubtitle, DrawerTitle } from "@material/react-drawer";
 import List, { ListItem, ListItemGraphic, ListItemText } from "@material/react-list";
-import { MaterialIconRound } from "./material-icon";
+import { MaterialIconRound as MDI } from "./material-icon";
 import { TopAppBarFixedAdjust } from "@material/react-top-app-bar";
 import { Component } from "react";
 import { AppBody } from "./body/body";
@@ -83,15 +83,15 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
           <DrawerContent>
             <List singleSelection selectedIndex={this.state.selectedIndex}>
               <ListItem href="/" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
-                <ListItemGraphic graphic={<MaterialIconRound icon='home' />} />
+                <ListItemGraphic graphic={<MDI icon='home' />} />
                 <ListItemText primaryText="Home" />
               </ListItem>
               <ListItem href="/ibm-stock-market" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
-                <ListItemGraphic graphic={<MaterialIconRound icon='trending_up' />} />
+                <ListItemGraphic graphic={<MDI icon='trending_up' />} />
                 <ListItemText primaryText="IBM Stock Market" />
               </ListItem>
               <ListItem href="/population" onClick={(ev) => this.listEltClick(ev.target as HTMLElement)}>
-                <ListItemGraphic graphic={<MaterialIconRound icon='leaderboard' />} />
+                <ListItemGraphic graphic={<MDI icon='leaderboard' />} />
                 <ListItemText primaryText="Population" />
               </ListItem>
             </List>
