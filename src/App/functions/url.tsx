@@ -11,5 +11,5 @@ export function goTo(href: string) {
 
 window.addEventListener('beforeunload', ev => {
   ev.preventDefault()
-  console.log(ev)
+  alert(ev)
 })
