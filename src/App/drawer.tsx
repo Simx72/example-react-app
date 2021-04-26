@@ -6,7 +6,7 @@ import { Component } from "react";
 import { AppBody } from "./body/body";
 import { AppHeader } from "./head/header";
 import appInfo from '../app-info.json';
-import { goTo } from "./functions/url";
+import { goTo, onUrlChange } from "./functions/url";
 import { Cell, Row, Grid } from "@material/react-layout-grid";
 
 interface AppDrawerProps { }
@@ -20,6 +20,9 @@ export class AppDrawer extends Component<AppDrawerProps, AppDrawerStates> {
 
   componentDidMount() {
     this.selectIndex()
+    onUrlChange(() => {
+      this.selectIndex()
+    })
   }
 
   toggleOpen() {
