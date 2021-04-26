@@ -40,13 +40,13 @@ body {
 }
 
 .favorite-elt.active {
-    color: my-color('primary', 800);
+    color: my-color('primary', 800) !important;
 }
 
 .favorite-elt.home-favorite {
-    color: my-color('complementary', 500);
+    color: my-color('complementary', 500) !important;
 }
 
 .favorite-elt.active.home-favorite {
-    color: my-color('complementary');
+    color: my-color('complementary') !important;
 }
