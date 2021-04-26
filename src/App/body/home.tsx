@@ -44,7 +44,7 @@ const Home = () => {
                 {val}
                 <CardActions>
                   <CardActionIcons>
-                    <Favorite cardAction />
+                    <Favorite />
                   </CardActionIcons>
                 </CardActions>
               </Card>
