@@ -39,7 +39,7 @@ const Home = () => {
       <Grid>
         <Row>
           {lista.map((val, index) => (
-            <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} >
+            <Cell desktopColumns={largoDe.Escritorio} tabletColumns={largoDe.Tablet} phoneColumns={largoDe.Cel} key={index} >
               <Card className="subir" style={{padding: '1rem'}}>
                 {val}
                 <CardActions>
