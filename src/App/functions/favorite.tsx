@@ -13,7 +13,23 @@ class Favorite extends Component<{ onChange?: (value: boolean) => any, cardActio
       this.props.onChange(this.state.filled)
     }
   }
-  render = () => (this.state.filled ? (<MaterialIconSharp cardAction={this.props.cardAction} onClick={() => this.change()} icon='favorite' />) : (<MaterialIconOutlined cardAction={this.props.cardAction} onClick={() => this.change()} icon='favorite' />))
+  render() {
+    if (this.state.filled === true) {
+      return (
+        <MaterialIconSharp
+          cardAction={this.props.cardAction}
+          onClick={() => this.change()}
+          icon='favorite' />
+      )
+    } else {
+      return (
+        <MaterialIconOutlined
+          cardAction={this.props.cardAction}
+          onClick={() => this.change()}
+          icon='favorite' />
+      )
+    }
+  }
 }
 
 export { Favorite }
