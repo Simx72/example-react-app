@@ -39,6 +39,14 @@ body {
     color: inherit !important;
 }
 
-.favorite.active {
+.favorite-elt.active {
     color: my-color('primary', 800);
+}
+
+.favorite-elt.home-favorite {
+    color: my-color('complementary', 500);
+}
+
+.favorite-elt.active.home-favorite {
+    color: my-color('complementary');
 }
