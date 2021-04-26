@@ -3,7 +3,7 @@ Arial,
 Helvetica,
 sans-serif !important;
 @function my-color($n: 'primary', $d: 'default') {
-    @if $n=='primary'OR $n=='complementary' {
+    @if $n=='primary' OR $n=='complementary' OR $n=='analog-1' OR $n=='analog-2' OR $n=='triadic-1' OR $n=='triadic-2' {
         @if $n=='primary' {
             @if $d==50 {
                 @return #e2f2fb;
@@ -74,11 +74,151 @@ sans-serif !important;
                 @return #ee965b;
             }
         }
+        @if $n=='analog-1' {
+            @if $d==50 {
+                @return #ddfbf8;
+            }
+            @if $d==100 {
+                @return #a7f4ec;
+            }
+            @if $d==200 {
+                @return #5beedf;
+            }
+            @if $d==300 {
+                @return #00e4cf;
+            }
+            @if $d==400 {
+                @return #00d8c1;
+            }
+            @if $d==500 {
+                @return #00ceb2;
+            }
+            @if $d==600 {
+                @return #00bea3;
+            }
+            @if $d==700 {
+                @return #00ac90;
+            }
+            @if $d==800 {
+                @return #009b80;
+            }
+            @if $d==900 {
+                @return #007c60;
+            }
+            @if $d=='default' {
+                @return #5beedf;
+            }
+        }
+        @if $n=='analog-2' {
+            @if $d==50 {
+                @return #e9eafd;
+            }
+            @if $d==100 {
+                @return #c8cbf9;
+            }
+            @if $d==200 {
+                @return #a3a9f5;
+            }
+            @if $d==300 {
+                @return #7b86f2;
+            }
+            @if $d==400 {
+                @return #5b6aee;
+            }
+            @if $d==500 {
+                @return #3a4de8;
+            }
+            @if $d==600 {
+                @return #3444dd;
+            }
+            @if $d==700 {
+                @return #2a38d0;
+            }
+            @if $d==800 {
+                @return #1f2cc5;
+            }
+            @if $d==900 {
+                @return #1513ad;
+            }
+            @if $d=='default' {
+                @return #5b6aee;
+            }
+        }
+        @if $n=='triadic-1' {
+            @if $d==50 {
+                @return #f1e9fc;
+            }
+            @if $d==100 {
+                @return #dbc8f9;
+            }
+            @if $d==200 {
+                @return #c3a3f5;
+            }
+            @if $d==300 {
+                @return #aa7bf2;
+            }
+            @if $d==400 {
+                @return #965bee;
+            }
+            @if $d==500 {
+                @return #813ae9;
+            }
+            @if $d==600 {
+                @return #7634e3;
+            }
+            @if $d==700 {
+                @return #672bd9;
+            }
+            @if $d==800 {
+                @return #5824d3;
+            }
+            @if $d==900 {
+                @return #4116c5;
+            }
+            @if $d=='default' {
+                @return #965bee;
+            }
+        }
+        @if $n=='triadic-2' {
+            @if $d==50 {
+                @return #fae4f2;
+            }
+            @if $d==100 {
+                @return #f4badf;
+            }
+            @if $d==200 {
+                @return #f08dca;
+            }
+            @if $d==300 {
+                @return #ee5bb3;
+            }
+            @if $d==400 {
+                @return #ee2c9f;
+            }
+            @if $d==500 {
+                @return #ef0089;
+            }
+            @if $d==600 {
+                @return #dc0084;
+            }
+            @if $d==700 {
+                @return #c5007d;
+            }
+            @if $d==800 {
+                @return #ae0077;
+            }
+            @if $d==900 {
+                @return #85006b;
+            }
+            @if $d=='default' {
+                @return #ee5bb3;
+            }
+        }
         @return #000;
     }
     @else {
         @return #000000;
-        @error "The first param of the function 'my-color' must either 'primary' or 'complementary'"
+        @error "The first param is incorrect"
     }
 }
 
