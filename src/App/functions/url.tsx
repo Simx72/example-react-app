@@ -8,3 +8,7 @@ export function goTo(href: string) {
   }
   return new Promise<string>(res => res(href))
 }
+
+window.addEventListener('popstate', ev => {
+  console.log(ev.state)
+})
