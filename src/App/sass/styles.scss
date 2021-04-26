@@ -38,3 +38,15 @@ body {
 .material-icon-two-tone {
     color: inherit !important;
 }
+
+.favorite.active {
+    color: my-color('primary', 800)
+}
+
+.favorite.home_favorite {
+    color: my-color('complementary', 400)
+}
+
+.favorite.home_favorite.active {
+    color: my-color('complementary', 900)
+}
