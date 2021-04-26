@@ -8,3 +8,8 @@ export function goTo(href: string) {
   }
   return new Promise<string>(res => res(href))
 }
+
+window.addEventListener('beforeunload', ev => {
+  ev.preventDefault()
+  console.log(ev)
+})
