@@ -9,6 +9,8 @@ export function goTo(href: string) {
   return new Promise<string>(res => res(href))
 }
 
-window.addEventListener('popstate', ev => {
-  console.log(ev.state)
-})
+export function onUrlChange (callback: (newUrl: string) => void) {
+  window.addEventListener('popstate', ev => {
+    callback(ev.state.href)
+  })
+}
