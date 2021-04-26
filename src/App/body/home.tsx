@@ -44,7 +44,7 @@ const Home = () => {
                 {val}
                 <CardActions>
                   <CardActionIcons>
-                    <Favorite className='home_favorite' cardAction />
+                    <Favorite className='home-favorite' cardAction />
                   </CardActionIcons>
                 </CardActions>
               </Card>
