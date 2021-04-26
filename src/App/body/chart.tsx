@@ -1,34 +1,33 @@
 import Card, { CardPrimaryContent, CardActions, CardActionIcons } from '@material/react-card';
 import * as Chart from 'react-chartjs-2';
+import * as Txt from '@material/react-typography'
 import { MaterialIconOutlined as MDI } from '../material-icon';
 import { useGet } from 'restful-react';
 
 const Chart1 = () => (
   <div id="App-body">
-    <Card>
-      <h1>Population in different continents</h1>
-      <CardPrimaryContent style={{ padding: '1rem' }} >
-        <Chart.Bar
-          type="bar"
-          data={{
-            labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-            datasets: [
-              {
-                label: "Population (millions)",
-                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-                data: [2478, 5267, 734, 784, 433]
-              }
-            ]
-          }}
-          options={{
-            legend: { display: false },
-            title: {
-              display: true,
-              text: 'Predicted world population (millions) in 2050'
+    <Card style={{ padding: '1rem' }}>
+      <Txt.Headline1>Population</Txt.Headline1>
+      <Chart.Bar
+        type="bar"
+        data={{
+          labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+          datasets: [
+            {
+              label: "Population (millions)",
+              backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+              data: [2478, 5267, 734, 784, 433]
             }
-          }}
-        />
-      </CardPrimaryContent>
+          ]
+        }}
+        options={{
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Predicted world population (millions) in 2050'
+          }
+        }}
+      />
       <CardActions>
         <CardActionIcons>
           <MDI cardAction icon='more_vert' />
