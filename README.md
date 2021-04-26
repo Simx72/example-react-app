@@ -8,4 +8,4 @@ o usando GitHub CLI
 
 Para iniciarla usa el comando `yarn start`
 
-Para compilación de producción usa `yarn build`
+Para compilación de producción usa `yarn build` y luego `serve -s build`
