@@ -15,10 +15,10 @@ class Favorite extends Component<{ onChange?: (active: boolean) => any, classNam
   }
   render() {
     let iconName = 'favorite_border'
-    let className = ''
+    let className = 'favorite-elt'
     if (this.state.filled === true) {
       iconName = 'favorite';
-      className = 'active'
+      className += ' active'
     }
     return (<MDI icon={iconName} onClick={() => this.change()} className={className + ' ' + this.props.className?.trim()} cardAction={this.props.cardAction} />)
   }
