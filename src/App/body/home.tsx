@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <div>
       <b className='color-complementary-900'>
-        <Txt.Headline1 style={alignCenter} >Home <Favorite/> </Txt.Headline1>
+        <Txt.Headline1 style={alignCenter} >Home </Txt.Headline1>
         <Txt.Headline2 style={alignCenter} >This is the main page of the project</Txt.Headline2>
       </b>
       <Grid>
