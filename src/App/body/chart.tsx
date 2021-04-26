@@ -1,4 +1,4 @@
-import Card, { CardPrimaryContent, CardActions, CardActionIcons } from '@material/react-card';
+import Card, { CardActions, CardActionIcons } from '@material/react-card';
 import * as Chart from 'react-chartjs-2';
 import * as Txt from '@material/react-typography'
 import { MaterialIconOutlined as MDI } from '../material-icon';
