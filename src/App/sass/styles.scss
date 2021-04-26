@@ -40,13 +40,9 @@ body {
 }
 
 .favorite.active {
-    color: my-color('primary', 800)
-}
-
-.favorite.home_favorite {
-    color: my-color('complementary', 400)
+    color: my-color('primary', 800);
 }
 
 .favorite.home_favorite.active {
-    color: my-color('complementary', 900)
+    color: my-color('complementary', 900) !important;
 }
