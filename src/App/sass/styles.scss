@@ -44,9 +44,9 @@ body {
 }
 
 .favorite-elt.home-favorite {
-    color: my-color('complementary') !important;
+    color: my-color('complementary', 700) !important;
 }
 
 .favorite-elt.active.home-favorite {
-    color: my-color('primary', 900) !important;
+    color: my-color('complementary', 900) !important;
 }
