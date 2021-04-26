@@ -1,5 +1,5 @@
+import MDI from "@material/react-material-icon";
 import { Component } from "react";
-import { MaterialIconOutlined, MaterialIconSharp } from "../material-icon";
 
 class Favorite extends Component<{ onChange?: (value: boolean) => any, cardAction?: boolean }, { filled: boolean }> {
   state = {
@@ -14,21 +14,9 @@ class Favorite extends Component<{ onChange?: (value: boolean) => any, cardActio
     }
   }
   render() {
-    if (this.state.filled === true) {
-      return (
-        <MaterialIconSharp
-          cardAction={this.props.cardAction}
-          onClick={() => this.change()}
-          icon='favorite' />
-      )
-    } else {
-      return (
-        <MaterialIconOutlined
-          cardAction={this.props.cardAction}
-          onClick={() => this.change()}
-          icon='favorite' />
-      )
-    }
+    let iconName = 'favorite_border'
+    if (this.state.filled === true) iconName = 'favorite';
+    return (<MDI icon={iconName} />)
   }
 }
 
