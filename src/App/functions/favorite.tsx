@@ -16,7 +16,7 @@ class Favorite extends Component<{ onChange?: (value: boolean) => any, cardActio
   render() {
     let iconName = 'favorite_border'
     if (this.state.filled === true) iconName = 'favorite';
-    return (<MDI icon={iconName} />)
+    return (<MDI icon={iconName} cardAction={this.props.cardAction} />)
   }
 }
 
