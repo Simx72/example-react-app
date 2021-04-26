@@ -1,4 +1,4 @@
-import MDI from "@material/react-material-icon";
+import { MaterialIcon as MDI } from "../material-icon";
 import { Component } from "react";
 
 class Favorite extends Component<{ onChange?: (value: boolean) => any, cardAction?: boolean }, { filled: boolean }> {
