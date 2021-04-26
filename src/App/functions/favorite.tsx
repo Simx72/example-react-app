@@ -20,7 +20,7 @@ class Favorite extends Component<{ onChange?: (active: boolean) => any, classNam
       iconName = 'favorite';
       className = 'active'
     }
-    return (<MDI icon={iconName} onClick={() => this.change()} className={className+' '+this.props.className?.trim()} cardAction={this.props.cardAction} />)
+    return (<MDI icon={iconName} onClick={() => this.change()} className={className + ' ' + this.props.className?.trim()} cardAction={this.props.cardAction} />)
   }
 }
 
